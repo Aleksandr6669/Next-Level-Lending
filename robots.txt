@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://nextlevel.pp.ua/sitemap.xml

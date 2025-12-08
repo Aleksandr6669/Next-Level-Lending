@@ -1,59 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-
-body {
-    font-family: 'Inter', sans-serif;
+/* Custom Styles */
+html {
+    scroll-behavior: smooth;
 }
 
 .chart-container {
     position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
     height: 300px;
-}
-
-@media (min-width: 768px) {
-    .chart-container {
-        height: 350px;
-    }
+    width: 100%;
 }
 
 .card-hover {
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-hover:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-.animate-fade-in {
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Custom Language Switcher Styles */
 #language-options {
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
-    pointer-events: none; /* Add this */
-    visibility: hidden; /* Use visibility instead of display */
+    display: none;
 }
 
-#language-options.show {
+#language-switcher-container:hover #language-options {
+    display: block;
+}
+
+.security-step {
+    transition: opacity 0.5s ease-in-out;
+}
+
+#sec-state-processing,
+#sec-state-unlocked {
+    transition: transform 0.5s ease-in-out;
+}
+
+.fade-in-up {
+    opacity: 0; /* Start hidden */
+    transform: translateY(50px); /* Increased distance */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Slower animation */
+}
+
+.fade-in-up.visible {
     opacity: 1;
     transform: translateY(0);
-    pointer-events: auto; /* Add this */
-    visibility: visible; /* Use visibility instead of display */
 }
+
+/* Staggered Animation Delays */
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+.delay-400 { transition-delay: 0.4s; }
+.delay-500 { transition-delay: 0.5s; }
