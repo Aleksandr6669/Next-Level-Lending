@@ -1,46 +1,76 @@
 let currentLang = 'uk';
 
 function setLanguage(lang) {
-    if (translations[lang]) {
+    if (translations[lang] && lang !== currentLang) {
         currentLang = lang;
         document.documentElement.lang = lang;
         localStorage.setItem('language', lang);
 
-        const { name, flag } = translations[lang];
-        document.getElementById('selected-lang-text').textContent = name;
-        document.getElementById('selected-lang-flag').textContent = flag;
+        const translatableElements = document.querySelectorAll('[data-translate-key]');
         
-        document.querySelectorAll('[data-translate-key]').forEach(el => {
-            const key = el.getAttribute('data-translate-key');
-            if (translations[lang][key]) {
-                if (el.tagName === 'META') {
-                    el.setAttribute('content', translations[lang][key]);
-                } else {
-                    el.innerHTML = translations[lang][key];
-                }
-            }
+        // 1. Fade out all translatable elements
+        translatableElements.forEach(el => {
+            el.style.opacity = '0';
         });
 
-        // Update charts with new language
-        if (completionChartInstance) {
-            completionChartInstance.options.plugins.title.text = translations[lang].admin_chart_completion_title;
-            completionChartInstance.data.labels = Object.keys(groupData.sales.completion).map(key => translations[lang][`chart_label_${key}`]);
-            completionChartInstance.data.datasets[0].label = translations[lang].chart_dataset_completion;
-            completionChartInstance.update();
-        }
-         if (chronoChartInstance) {
-            chronoChartInstance.options.plugins.title.text = translations[lang].admin_chart_chrono_title;
-            chronoChartInstance.data.datasets[0].label = translations[lang].chart_dataset_activity;
-            chronoChartInstance.update();
-        }
+        // 2. Wait for the fade-out transition to complete
+        setTimeout(() => {
+            // Update button text and flag immediately
+            const { name, flag } = translations[lang];
+            document.getElementById('selected-lang-text').textContent = name;
+            document.getElementById('selected-lang-flag').textContent = flag;
 
-        // Update dynamic content
-        updateCharts(); // This will re-render KPIs
-        // Re-apply the current role's content to update its text
-        const activeRole = document.getElementById('tab-admin').classList.contains('bg-white') ? 'admin' : 'student';
-        document.getElementById('role-content').innerHTML = getRoleContent(activeRole);
+            // 3. Update the content of all elements
+            translatableElements.forEach(el => {
+                const key = el.getAttribute('data-translate-key');
+                if (translations[lang][key]) {
+                    if (el.tagName === 'META') {
+                        el.setAttribute('content', translations[lang][key]);
+                    } else {
+                        el.innerHTML = translations[lang][key];
+                    }
+                }
+            });
+            
+            // Update dynamic content that is not part of the querySelectorAll loop
+            const activeRole = document.getElementById('tab-admin').classList.contains('bg-white') ? 'admin' : 'student';
+            document.getElementById('role-content').innerHTML = getRoleContent(activeRole);
+
+            // 4. Fade in all translatable elements
+            translatableElements.forEach(el => {
+                el.style.opacity = '1';
+            });
+            document.getElementById('role-content').style.opacity = '1';
+
+            // 5. Update charts with new language
+            updateChartsAndTitles(lang);
+
+        }, 200); // This duration should match the CSS transition time
     }
 }
+
+function updateChartsAndTitles(lang) {
+    const group = document.getElementById('group-selector').value;
+    const data = groupData[group];
+    const kpiList = document.getElementById('kpi-list');
+
+    if (kpiList) {
+        kpiList.innerHTML = data.kpiKeys.map(key => `<li>✅ ${translations[lang][key]}</li>`).join('');
+    }
+
+    if (completionChartInstance) {
+        completionChartInstance.options.plugins.title.text = translations[lang].admin_chart_completion_title;
+        completionChartInstance.data.labels = Object.keys(data.completion).map(key => translations[lang][`chart_label_${key}`]);
+        completionChartInstance.data.datasets[0].label = translations[lang].chart_dataset_completion;
+        completionChartInstance.update('none'); // 'none' for no animation
+    }
+     if (chronoChartInstance) {
+        chronoChartInstance.options.plugins.title.text = translations[lang].admin_chart_chrono_title;
+        chronoChartInstance.data.datasets[0].label = translations[lang].chart_dataset_activity;
+        chronoChartInstance.update('none');
+    }
+}
+
 
 // --- Architecture Interaction ---
 const archData = {
@@ -92,20 +122,20 @@ function getRoleContent(role) {
         return `
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in">
             <div>
-                <h3 class="text-xl font-bold text-brand-600 mb-3">${lang.roles_admin_intro}</h3>
+                <h3 class="text-xl font-bold text-brand-600 mb-3" data-translate-key="roles_admin_intro">${lang.roles_admin_intro}</h3>
                 <ul class="space-y-3">
-                    <li class="flex items-start"><span class="mr-2">📝</span><span>${lang.roles_admin_item1}</span></li>
-                    <li class="flex items-start"><span class="mr-2">👥</span><span>${lang.roles_admin_item2}</span></li>
-                    <li class="flex items-start"><span class="mr-2">📊</span><span>${lang.roles_admin_item3}</span></li>
-                    <li class="flex items-start"><span class="mr-2">🔑</span><span>${lang.roles_admin_item4}</span></li>
-                    <li class="flex items-start"><span class="mr-2">📅</span><span>${lang.roles_admin_item5}</span></li>
+                    <li class="flex items-start"><span class="mr-2">📝</span><span data-translate-key="roles_admin_item1">${lang.roles_admin_item1}</span></li>
+                    <li class="flex items-start"><span class="mr-2">👥</span><span data-translate-key="roles_admin_item2">${lang.roles_admin_item2}</span></li>
+                    <li class="flex items-start"><span class="mr-2">📊</span><span data-translate-key="roles_admin_item3">${lang.roles_admin_item3}</span></li>
+                    <li class="flex items-start"><span class="mr-2">🔑</span><span data-translate-key="roles_admin_item4">${lang.roles_admin_item4}</span></li>
+                    <li class="flex items-start"><span class="mr-2">📅</span><span data-translate-key="roles_admin_item5">${lang.roles_admin_item5}</span></li>
                 </ul>
             </div>
             <div class="bg-slate-50 p-4 rounded-lg border border-slate-100 flex items-center justify-center">
                 <div class="text-center">
                     <div class="text-4xl mb-2">🖥️</div>
                     <p class="font-bold text-slate-700">Flutter Web / JS Framework</p>
-                    <p class="text-xs text-slate-500">${lang.roles_admin_platform}</p>
+                    <p class="text-xs text-slate-500" data-translate-key="roles_admin_platform">${lang.roles_admin_platform}</p>
                 </div>
             </div>
         </div>
@@ -114,20 +144,20 @@ function getRoleContent(role) {
         return `
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in">
             <div>
-                <h3 class="text-xl font-bold text-green-600 mb-3">${lang.roles_student_intro}</h3>
+                <h3 class="text-xl font-bold text-green-600 mb-3" data-translate-key="roles_student_intro">${lang.roles_student_intro}</h3>
                 <ul class="space-y-3">
-                    <li class="flex items-start"><span class="mr-2">📱</span><span>${lang.roles_student_item1}</span></li>
-                    <li class="flex items-start"><span class="mr-2">🎮</span><span>${lang.roles_student_item2}</span></li>
-                    <li class="flex items-start"><span class="mr-2">💬</span><span>${lang.roles_student_item3}</span></li>
-                    <li class="flex items-start"><span class="mr-2">⚙️</span><span>${lang.roles_student_item4}</span></li>
-                    <li class="flex items-start"><span class="mr-2">🔒</span><span>${lang.roles_student_item5}</span></li>
+                    <li class="flex items-start"><span class="mr-2">📱</span><span data-translate-key="roles_student_item1">${lang.roles_student_item1}</span></li>
+                    <li class="flex items-start"><span class="mr-2">🎮</span><span data-translate-key="roles_student_item2">${lang.roles_student_item2}</span></li>
+                    <li class="flex items-start"><span class="mr-2">💬</span><span data-translate-key="roles_student_item3">${lang.roles_student_item3}</span></li>
+                    <li class="flex items-start"><span class="mr-2">⚙️</span><span data-translate-key="roles_student_item4">${lang.roles_student_item4}</span></li>
+                    <li class="flex items-start"><span class="mr-2">🔒</span><span data-translate-key="roles_student_item5">${lang.roles_student_item5}</span></li>
                 </ul>
             </div>
             <div class="bg-slate-50 p-4 rounded-lg border border-slate-100 flex items-center justify-center">
                 <div class="text-center">
                     <div class="text-4xl mb-2">📱💻</div>
                     <p class="font-bold text-slate-700">Cross-Platform App</p>
-                    <p class="text-xs text-slate-500">${lang.roles_student_platform}</p>
+                    <p class="text-xs text-slate-500" data-translate-key="roles_student_platform">${lang.roles_student_platform}</p>
                 </div>
             </div>
         </div>
@@ -204,75 +234,44 @@ function initCharts() {
 
     // Initial chart update
     updateCharts();
+    // Set initial language without animations
+    const savedLang = localStorage.getItem('language') || 'uk';
+    setLanguageInitial(savedLang);
 }
 
 function updateCharts() {
     const group = document.getElementById('group-selector').value;
-    const data = groupData[group];
-    const lang = translations[currentLang];
-
-    const kpiList = document.getElementById('kpi-list');
-    if (kpiList) {
-        kpiList.innerHTML = data.kpiKeys.map(key => `<li>✅ ${lang[key]}</li>`).join('');
-    }
-
-    if (completionChartInstance) {
-        completionChartInstance.data.labels = Object.keys(data.completion).map(key => lang[`chart_label_${key}`]);
-        completionChartInstance.data.datasets[0].data = Object.values(data.completion);
-        completionChartInstance.update();
-    }
-
-    if (chronoChartInstance) {
-        chronoChartInstance.data.datasets[0].data = data.chronoData;
-        chronoChartInstance.update();
-    }
+    updateChartsAndTitles(currentLang); 
 }
 
-// --- Security Demo Logic ---
-function startDecryption() {
-    const locked = document.getElementById('sec-state-locked');
-    const processing = document.getElementById('sec-state-processing');
-    const unlocked = document.getElementById('sec-state-unlocked');
+function setLanguageInitial(lang) {
+    currentLang = lang;
+    document.documentElement.lang = lang;
+    localStorage.setItem('language', lang);
+
+    const { name, flag } = translations[lang];
+    document.getElementById('selected-lang-text').textContent = name;
+    document.getElementById('selected-lang-flag').textContent = flag;
     
-    const steps = [ document.getElementById('step-1'), document.getElementById('step-2'), document.getElementById('step-3') ];
+    document.querySelectorAll('[data-translate-key]').forEach(el => {
+        const key = el.getAttribute('data-translate-key');
+        if (translations[lang][key]) {
+            if (el.tagName === 'META') {
+                el.setAttribute('content', translations[lang][key]);
+            } else {
+                el.innerHTML = translations[lang][key];
+            }
+        }
+    });
 
-    locked.classList.add('-translate-y-full');
-    
-    processing.classList.remove('translate-y-full');
-    steps[0].classList.replace('opacity-100', 'opacity-50');
-    steps[1].classList.replace('opacity-50', 'opacity-100');
-
-    setTimeout(() => {
-        processing.classList.add('-translate-y-full');
-        unlocked.classList.remove('translate-y-full');
-        
-        steps[1].classList.replace('opacity-100', 'opacity-50');
-        steps[2].classList.replace('opacity-50', 'opacity-100');
-    }, 2000);
-}
-
-function resetSecurity() {
-    const locked = document.getElementById('sec-state-locked');
-    const processing = document.getElementById('sec-state-processing');
-    const unlocked = document.getElementById('sec-state-unlocked');
-
-    locked.classList.remove('-translate-y-full');
-    processing.classList.remove('-translate-y-full');
-    processing.classList.add('translate-y-full');
-    unlocked.classList.add('translate-y-full');
-
-    document.getElementById('step-1').classList.replace('opacity-50', 'opacity-100');
-    document.getElementById('step-2').classList.replace('opacity-100', 'opacity-50');
-    document.getElementById('step-3').classList.replace('opacity-100', 'opacity-50');
+    updateChartsAndTitles(lang);
+    switchRole('admin');
 }
 
 // --- Event Listeners ---
 document.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('language') || 'uk';
     
-    initCharts(); // Initialize charts first
-    switchRole('admin'); // Set default role
-    setLanguage(savedLang); // Then set language, which updates all text
+    initCharts();
 
     // Custom Language Switcher Logic
     const langSwitcherButton = document.getElementById('language-switcher-button');
@@ -286,9 +285,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     langOptions.addEventListener('click', (e) => {
-        if (e.target.tagName === 'A') {
+        if (e.target.closest('a')) {
             e.preventDefault();
-            const lang = e.target.getAttribute('data-lang');
+            const lang = e.target.closest('a').getAttribute('data-lang');
             setLanguage(lang);
             langOptions.classList.remove('show');
             langSwitcherButton.setAttribute('aria-expanded', 'false');
