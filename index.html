@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -11,10 +12,22 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://nextlevel.pp.ua/">
 
+    <!-- Hreflang tags -->
+    <link rel="alternate" hreflang="uk" href="https://nextlevel.pp.ua/?lang=uk" />
+    <link rel="alternate" hreflang="en" href="https://nextlevel.pp.ua/?lang=en" />
+    <link rel="alternate" hreflang="fr" href="https://nextlevel.pp.ua/?lang=fr" />
+    <link rel="alternate" hreflang="x-default" href="https://nextlevel.pp.ua/" />
+
     <!-- Favicon -->
-    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="icon" href="/logo.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
 
     <!-- Open Graph Meta Tags -->
+    <meta property="og:image" content="https://nextlevel.pp.ua/logo.svg">
     <meta property="og:title" content="Next Level LMS: Інноваційна Платформа для Корпоративного Навчання" data-translate-key="og_title">
     <meta property="og:description" content="Трансформуйте навчання у вашій компанії з Next Level. Наша екосистема пропонує гнучкі інструменти для створення курсів, аналітики та безпечного доступу до знань." data-translate-key="og_description">
     <meta property="og:type" content="website">
@@ -60,12 +73,13 @@
                     </a>
                 </div>
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#vision" class="text-slate-600 hover:text-brand-600 px-3 py-2 text-sm font-medium" data-translate-key="nav_vision">Візія</a>
+                    <a href="#ecosystem" class="text-slate-600 hover:text-brand-600 px-3 py-2 text-sm font-medium" data-translate-key="nav_ecosystem">Екосистема</a>
+                    <a href="#features" class="text-slate-600 hover:text-brand-600 px-3 py-2 text-sm font-medium" data-translate-key="nav_features">Можливості</a>
+                    <a href="#ai_assistant" class="text-slate-600 hover:text-brand-600 px-3 py-2 text-sm font-medium" data-translate-key="nav_ai_assistant">AI-Асистент</a>
                     <a href="#architecture" class="text-slate-600 hover:text-brand-600 px-3 py-2 text-sm font-medium" data-translate-key="nav_architecture">Архітектура</a>
-                    <a href="#roles" class="text-slate-600 hover:text-brand-600 px-3 py-2 text-sm font-medium" data-translate-key="nav_roles">Ролі</a>
-                    <a href="#kpi" class="text-slate-600 hover:text-brand-600 px-3 py-2 text-sm font-medium" data-translate-key="nav_kpi">Ключові Метрики</a>
-                    <a href="#admin" class="text-slate-600 hover:text-brand-600 px-3 py-2 text-sm font-medium" data-translate-key="nav_admin">Адмін-панель</a>
                     <a href="#security" class="text-slate-600 hover:text-brand-600 px-3 py-2 text-sm font-medium" data-translate-key="nav_security">Безпека</a>
+                    <a href="#audience" class="text-slate-600 hover:text-brand-600 px-3 py-2 text-sm font-medium" data-translate-key="nav_audience">Для кого?</a>
+                    <a href="#contact" class="text-slate-600 hover:text-brand-600 px-3 py-2 text-sm font-medium" data-translate-key="nav_contact">Контакти</a>
                 </div>
                 <div class="flex items-center">
                     <!-- Custom Language Switcher -->
@@ -94,12 +108,13 @@
         </nav>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 p-4">
-            <a href="#vision" class="block px-3 py-2 text-slate-600 hover:text-brand-600" data-translate-key="nav_vision">Візія</a>
+            <a href="#ecosystem" class="block px-3 py-2 text-slate-600 hover:text-brand-600" data-translate-key="nav_ecosystem">Екосистема</a>
+            <a href="#features" class="block px-3 py-2 text-slate-600 hover:text-brand-600" data-translate-key="nav_features">Можливості</a>
+            <a href="#ai_assistant" class="block px-3 py-2 text-slate-600 hover:text-brand-600" data-translate-key="nav_ai_assistant">AI-Асистент</a>
             <a href="#architecture" class="block px-3 py-2 text-slate-600 hover:text-brand-600" data-translate-key="nav_architecture">Архітектура</a>
-            <a href="#roles" class="block px-3 py-2 text-slate-600 hover:text-brand-600" data-translate-key="nav_roles">Ролі</a>
-            <a href="#kpi" class="block px-3 py-2 text-slate-600 hover:text-brand-600" data-translate-key="nav_kpi">Ключові Метрики</a>
-            <a href="#admin" class="block px-3 py-2 text-slate-600 hover:text-brand-600" data-translate-key="nav_admin">Адмін-панель</a>
             <a href="#security" class="block px-3 py-2 text-slate-600 hover:text-brand-600" data-translate-key="nav_security">Безпека</a>
+            <a href="#audience" class="block px-3 py-2 text-slate-600 hover:text-brand-600" data-translate-key="nav_audience">Для кого?</a>
+            <a href="#contact" class="block px-3 py-2 text-slate-600 hover:text-brand-600" data-translate-key="nav_contact">Контакти</a>
         </div>
     </header>
 
@@ -111,16 +126,16 @@
                     <div class="mt-10 mx-auto max-w-7xl sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28">
                         <div class="sm:text-center lg:text-left">
                             <h1 class="text-4xl tracking-tight font-extrabold text-slate-900 sm:text-5xl md:text-6xl fade-in-up">
-                                <span class="block xl:inline" data-translate-key="hero_title1">Next Level LMS</span>
-                                <span class="block text-brand-600 xl:inline" data-translate-key="hero_title2">для Сучасного Бізнесу</span>
+                                <span class="block xl:inline" data-translate-key="hero_title1">Next Level:</span>
+                                <span class="block text-brand-600 xl:inline" data-translate-key="hero_title2">Єдина Екосистема для Вашого Росту</span>
                             </h1>
                             <p class="mt-3 text-base text-slate-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 fade-in-up delay-100" data-translate-key="hero_subtitle">
-                                "Next Level" — це інноваційна система управління навчанням (LMS), що надає компаніям повний контроль над корпоративними тренінгами та розвитком співробітників у єдиній безпечній онлайн-екосистемі.
+                                Це не просто LMS. Це інтегрована екосистема для навчання, співпраці та аналітики, що надає компаніям повний контроль над розвитком співробітників.
                             </p>
                             <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start fade-in-up delay-200">
                                 <div class="rounded-md shadow">
-                                    <a href="#architecture" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-600 hover:bg-brand-700 md:py-4 md:text-lg md:px-10" data-translate-key="hero_cta">
-                                        Дізнатись більше
+                                    <a href="#ecosystem" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-600 hover:bg-brand-700 md:py-4 md:text-lg md:px-10" data-translate-key="hero_cta">
+                                        Дослідити Екосистему
                                     </a>
                                 </div>
                             </div>
@@ -129,12 +144,17 @@
                 </div>
             </div>
             <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 bg-brand-50 flex items-center justify-center fade-in-up delay-300">
-                <div class="text-brand-900 font-bold text-9xl opacity-10 select-none">LMS</div>
+                 <div class="text-brand-900 font-bold text-9xl opacity-10 select-none">ECO</div>
             </div>
         </section>
 
+        <!-- Placeholder for new sections -->
+        <section id="ecosystem" class="py-16 bg-slate-50"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"><h2 class="text-3xl font-extrabold text-slate-900">Наша Екосистема</h2></div></section>
+        <section id="features" class="py-16 bg-white"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"><h2 class="text-3xl font-extrabold text-slate-900">Ключові Можливості</h2></div></section>
+        <section id="ai_assistant" class="py-16 bg-slate-50"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"><h2 class="text-3xl font-extrabold text-slate-900">AI-Асистент на базі Gemini</h2></div></section>
+
         <!-- Architecture Section -->
-        <section id="architecture" class="py-16 bg-slate-50">
+        <section id="architecture" class="py-16 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl font-extrabold text-slate-900 fade-in-up" data-translate-key="arch_title">Архітектура Сучасної LMS</h2>
@@ -171,98 +191,6 @@
                 <div id="arch-detail-box" class="mt-8 bg-brand-50 border border-brand-200 rounded-lg p-6 text-center transition-all duration-300 fade-in-up delay-400">
                     <h4 class="text-lg font-bold text-brand-900" id="arch-title-display" data-translate-key="arch_detail_placeholder_title">Оберіть компонент вище</h4>
                     <p class="mt-2 text-brand-700" id="arch-desc-display" data-translate-key="arch_detail_placeholder_desc">Дізнайтеся, які технології використовуються для забезпечення швидкодії та безпеки.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Roles Section -->
-        <section id="roles" class="py-16 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-10">
-                    <h2 class="text-3xl font-extrabold text-slate-900 fade-in-up" data-translate-key="roles_title">Рольова Модель в LMS</h2>
-                    <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto fade-in-up delay-100" data-translate-key="roles_subtitle">
-                        Система чітко розмежовує можливості для Адміністраторів та Учнів, забезпечуючи зручність та контроль над навчальним процесом.
-                    </p>
-                </div>
-                <div class="flex justify-center mb-8 fade-in-up delay-200">
-                    <div class="bg-slate-100 p-1 rounded-lg inline-flex">
-                        <button onclick="switchRole('admin')" id="tab-admin" class="px-6 py-2 rounded-md text-sm font-medium" data-translate-key="roles_tab_admin">Адміністратор / Викладач</button>
-                        <button onclick="switchRole('student')" id="tab-student" class="px-6 py-2 rounded-md text-sm font-medium" data-translate-key="roles_tab_student">Учень</button>
-                    </div>
-                </div>
-                <div id="role-content" class="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm fade-in-up delay-300">
-                    <!-- Content injected by JS -->
-                </div>
-            </div>
-        </section>
-
-        <!-- KPI Section -->
-        <section id="kpi" class="py-16 bg-slate-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-extrabold text-slate-900 fade-in-up" data-translate-key="kpi_title">Ключові Метрики (KPI)</h2>
-                    <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto fade-in-up delay-100" data-translate-key="kpi_subtitle">
-                        Візуалізуйте успішність вашої навчальної програми за допомогою ключових показників ефективності.
-                    </p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                    <div class="bg-white rounded-xl shadow-lg p-8 fade-in-up delay-200">
-                        <div class="text-5xl font-extrabold text-brand-600">92%</div>
-                        <div class="mt-2 text-slate-600 font-semibold" data-translate-key="kpi_certification">Сертифікація</div>
-                    </div>
-                    <div class="bg-white rounded-xl shadow-lg p-8 fade-in-up delay-300">
-                        <div class="text-5xl font-extrabold text-brand-600">4.5 <span class="text-2xl" data-translate-key="kpi_hours_unit">год</span></div>
-                        <div class="mt-2 text-slate-600 font-semibold" data-translate-key="kpi_time_on_course">Час на курс</div>
-                    </div>
-                    <div class="bg-white rounded-xl shadow-lg p-8 fade-in-up delay-400">
-                        <div class="text-5xl font-extrabold text-green-500" data-translate-key="kpi_activity_level">Висока</div>
-                        <div class="mt-2 text-slate-600 font-semibold" data-translate-key="kpi_activity">Активність</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Admin Dashboard Section -->
-        <section id="admin" class="py-16 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="mb-12">
-                    <h2 class="text-3xl font-extrabold text-slate-900 fade-in-up" data-translate-key="admin_title">Центр Адміністрування LMS</h2>
-                    <p class="mt-4 text-lg text-slate-600 max-w-4xl fade-in-up delay-100" data-translate-key="admin_subtitle">
-                        Наша адмін-панель надає інструменти для детального контролю та аудиту. Аналізуйте ефективність тренінгів, відстежуйте KPI та прогрес груп.
-                    </p>
-                </div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    <div class="bg-white p-6 rounded-xl shadow-lg fade-in-up delay-200">
-                        <h3 class="text-xl font-bold text-slate-800 mb-4" data-translate-key="admin_report_settings">Налаштування Звіту</h3>
-                        <div class="space-y-4">
-                            <div>
-                                <label for="group-selector" class="block text-sm font-medium text-slate-700 mb-1" data-translate-key="admin_select_group">Виберіть Групу</label>
-                                <select id="group-selector" class="w-full rounded-md shadow-sm p-2 focus:ring-brand-500 focus:border-brand-500 bg-white" onchange="updateCharts()" aria-label="Select a group to display analytics for">
-                                    <option value="sales" data-translate-key="admin_group_sales">Відділ Продажів (Sales)</option>
-                                    <option value="dev" data-translate-key="admin_group_dev">Розробники (IT)</option>
-                                    <option value="hr" data-translate-key="admin_group_hr">HR Департамент</option>
-                                </select>
-                            </div>
-                            <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
-                                <h4 class="font-bold text-slate-700 text-sm" data-translate-key="admin_kpi">Ключові Метрики (KPI)</h4>
-                                <ul class="mt-2 space-y-2 text-sm text-slate-600" id="kpi-list"></ul>
-                            </div>
-                            <div class="text-sm text-slate-500 italic" data-translate-key="admin_data_notice">* Дані оновлюються в реальному часі на основі вибору групи.</div>
-                        </div>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center justify-center fade-in-up delay-300">
-                        <h3 class="text-lg font-bold text-slate-800 mb-2 w-full text-left" data-translate-key="admin_chart_completion_title">Рівень Проходження Курсів</h3>
-                        <div class="chart-container">
-                            <canvas id="completionChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-8 bg-white p-6 rounded-xl shadow-lg fade-in-up delay-400">
-                    <h3 class="text-lg font-bold text-slate-800 mb-2" data-translate-key="admin_chart_chrono_title">Хронологія Активності в Системі</h3>
-                    <p class="text-sm text-slate-500 mb-4" data-translate-key="admin_chart_chrono_subtitle">Аналіз активності користувачів протягом робочого дня для оптимізації навчання.</p>
-                    <div class="chart-container" style="max-width: 100%;">
-                        <canvas id="chronoChart"></canvas
-                    </div>
                 </div>
             </div>
         </section>
@@ -306,14 +234,59 @@
                             <div id="sec-state-unlocked" class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center translate-y-full bg-green-50">
                                 <div class="text-4xl mb-4">🔓</div>
                                 <h5 class="font-bold text-lg text-green-700" data-translate-key="security_unlocked_title">Доступ Надано!</h5>
-                                <p class="text-xs text-green-600 mt-2" data-translate-key="security_unlocked_desc">Контент розшифровано локально.</p>
-                                <button onclick="resetSecurity()" class="mt-4 px-3 py-1 border border-green-600 text-green-700 rounded text-sm hover:bg-green-100" data-translate-key="security_unlocked_reset">Скинути</button>
+                                <p class="text-xs text-green-600 mt-2" data-translate-key="unlocked_desc">Контент розшифровано локально.</p>
+                                <button onclick="resetSecurity()" class="mt-4 px-3 py-1 border border-green-600 text-green-700 rounded text-sm hover:bg-green-100" data-translate-key="reset">Скинути</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Audience Section -->
+        <section id="audience" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-extrabold text-slate-900" data-translate-key="audience_title">Для кого наша платформа?</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto" data-translate-key="audience_subtitle">Ми створили гнучке середовище, що об'єднує всіх учасників освітнього процесу.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- For Business -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border-t-4 border-blue-500 text-center card-hover">
+                        <div class="flex justify-center mb-4">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800" data-translate-key="audience_business_title">Для Бізнесу</h3>
+                        <p class="mt-2 text-slate-600" data-translate-key="audience_business_desc">Створюйте корпоративні університети, навчайте співробітників, аналізуйте прогрес та керуйте знаннями в єдиній захищеній системі.</p>
+                    </div>
+                    <!-- For Teachers -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border-t-4 border-green-500 text-center card-hover">
+                        <div class="flex justify-center mb-4">
+                            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
+                                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M15 21v-2a4 4 0 00-4-4H9a4 4 0 00-4 4v2"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800" data-translate-key="audience_teachers_title">Для Викладачів та Авторів</h3>
+                        <p class="mt-2 text-slate-600" data-translate-key="audience_teachers_desc">Монетизуйте свою експертизу. Створюйте та продавайте курси, формуйте особистий бренд та взаємодійте з аудиторією.</p>
+                    </div>
+                    <!-- For Students -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 border-t-4 border-purple-500 text-center card-hover">
+                        <div class="flex justify-center mb-4">
+                            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center">
+                                <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-9.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-9.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800" data-translate-key="audience_students_title">Для Тих, Хто Навчається</h3>
+                        <p class="mt-2 text-slate-600" data-translate-key="audience_students_desc">Знаходьте курси на будь-який смак на відкритому маркетплейсі. Розвивайтеся та досягайте нових кар'єрних висот.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 bg-slate-50"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"><h2 class="text-3xl font-extrabold text-slate-900">Станьте частиною "Next Level"</h2></div></section>
+
     </main>
 
     <!-- Footer -->

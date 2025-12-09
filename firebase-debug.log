@@ -1,0 +1,296 @@
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-12-09T20:37:03.235Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:37:03.242Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-12-09T20:38:01.903Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:38:01.903Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:05.471Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.474Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.475Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:05.476Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.476Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.477Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:05.482Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.483Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.483Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:05.501Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.501Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.502Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:05.502Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.502Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.503Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:05.504Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.504Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.504Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:05.507Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.508Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.508Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:05.509Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.509Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.509Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:05.513Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.513Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.513Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:05.514Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.514Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.514Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:05.515Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.515Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.515Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:05.516Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.516Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.516Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:05.517Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.517Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.517Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:05.524Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.524Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.525Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:05.525Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.525Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.526Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:05.527Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.527Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.527Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:05.527Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.528Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.528Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:05.528Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.528Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.528Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:05.531Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.532Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.532Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:05.532Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.532Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:05.532Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-12-09T20:39:08.507Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-12-09T20:39:08.534Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-12-09T20:39:08.545Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:42.153Z] Running auto auth
+[debug] [2025-12-09T20:39:42.154Z] Running auto auth
+[debug] [2025-12-09T20:39:42.155Z] Running auto auth
+[debug] [2025-12-09T20:39:42.155Z] Running auto auth
+[debug] [2025-12-09T20:39:42.155Z] Running auto auth
+[debug] [2025-12-09T20:39:42.155Z] Running auto auth
+[debug] [2025-12-09T20:39:42.156Z] Running auto auth
+[debug] [2025-12-09T20:39:42.156Z] Running auto auth
+[debug] [2025-12-09T20:39:42.156Z] Running auto auth
+[debug] [2025-12-09T20:39:42.156Z] Running auto auth
+[debug] [2025-12-09T20:39:42.156Z] Running auto auth
+[debug] [2025-12-09T20:39:42.156Z] Running auto auth
+[debug] [2025-12-09T20:39:42.156Z] Running auto auth
+[debug] [2025-12-09T20:39:42.157Z] Running auto auth
+[debug] [2025-12-09T20:39:42.163Z] Running auto auth
+[debug] [2025-12-09T20:39:42.165Z] Running auto auth
+[debug] [2025-12-09T20:39:42.167Z] Running auto auth
+[debug] [2025-12-09T20:39:42.167Z] Running auto auth
+[debug] [2025-12-09T20:39:42.168Z] Running auto auth
+[debug] [2025-12-09T20:39:42.169Z] Running auto auth
+[debug] [2025-12-09T20:39:42.172Z] Running auto auth
+[debug] [2025-12-09T20:39:42.172Z] Running auto auth
+[debug] [2025-12-09T20:39:42.176Z] Running auto auth
+[debug] [2025-12-09T20:39:42.402Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firestore.googleapis.com [none]
+[debug] [2025-12-09T20:39:42.402Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firestore.googleapis.com x-goog-quota-user=projects/nextlevel-work-41273848-98e6b
+[debug] [2025-12-09T20:39:42.685Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-12-09T20:39:42.686Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/nextlevel-work-41273848-98e6b
+[debug] [2025-12-09T20:39:42.747Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-12-09T20:39:42.747Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/nextlevel-work-41273848-98e6b
+[debug] [2025-12-09T20:39:42.780Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-12-09T20:39:42.781Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/nextlevel-work-41273848-98e6b
+[debug] [2025-12-09T20:39:42.814Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseio.com [none]
+[debug] [2025-12-09T20:39:42.816Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseio.com x-goog-quota-user=projects/nextlevel-work-41273848-98e6b
+[debug] [2025-12-09T20:39:42.844Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firestore.googleapis.com [none]
+[debug] [2025-12-09T20:39:42.845Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firestore.googleapis.com x-goog-quota-user=projects/nextlevel-work-41273848-98e6b
+[debug] [2025-12-09T20:39:42.879Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-12-09T20:39:42.880Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/nextlevel-work-41273848-98e6b
+[debug] [2025-12-09T20:39:42.932Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-12-09T20:39:42.933Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/nextlevel-work-41273848-98e6b
+[debug] [2025-12-09T20:39:42.966Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-12-09T20:39:42.967Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/nextlevel-work-41273848-98e6b
+[debug] [2025-12-09T20:39:43.001Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseio.com [none]
+[debug] [2025-12-09T20:39:43.003Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseio.com x-goog-quota-user=projects/nextlevel-work-41273848-98e6b
+[debug] [2025-12-09T20:39:43.052Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firestore.googleapis.com [none]
+[debug] [2025-12-09T20:39:43.052Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firestore.googleapis.com x-goog-quota-user=projects/nextlevel-work-41273848-98e6b
+[debug] [2025-12-09T20:39:43.116Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-12-09T20:39:43.116Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/nextlevel-work-41273848-98e6b
+[debug] [2025-12-09T20:39:43.180Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-12-09T20:39:43.181Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/nextlevel-work-41273848-98e6b
+[debug] [2025-12-09T20:39:43.243Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-12-09T20:39:43.243Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/nextlevel-work-41273848-98e6b
+[debug] [2025-12-09T20:39:43.301Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseio.com [none]
+[debug] [2025-12-09T20:39:43.301Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseio.com x-goog-quota-user=projects/nextlevel-work-41273848-98e6b
+[debug] [2025-12-09T20:39:43.351Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firestore.googleapis.com [none]
+[debug] [2025-12-09T20:39:43.351Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firestore.googleapis.com x-goog-quota-user=projects/nextlevel-work-41273848-98e6b
+[debug] [2025-12-09T20:39:43.409Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-12-09T20:39:43.409Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/nextlevel-work-41273848-98e6b
+[debug] [2025-12-09T20:39:43.468Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-12-09T20:39:43.468Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/nextlevel-work-41273848-98e6b
+[debug] [2025-12-09T20:39:43.496Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseapphosting.googleapis.com [none]
+[debug] [2025-12-09T20:39:43.497Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseapphosting.googleapis.com x-goog-quota-user=projects/nextlevel-work-41273848-98e6b
+[debug] [2025-12-09T20:39:43.538Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseio.com [none]
+[debug] [2025-12-09T20:39:43.539Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseio.com x-goog-quota-user=projects/nextlevel-work-41273848-98e6b
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-12-09T20:39:43.581Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:43.581Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-12-09T20:39:43.607Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:43.607Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[error] Failed to fetch Firebase Project from Studio Workspace because WORKSPACE_SLUG environment variable is empty
+[debug] [2025-12-09T20:39:43.648Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:43.648Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[debug] [2025-12-09T20:39:44.345Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firestore.googleapis.com 401
+[debug] [2025-12-09T20:39:44.345Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firestore.googleapis.com [omitted]
+[debug] [2025-12-09T20:39:44.345Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-12-09T20:39:44.346Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.361Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.361Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:44.362Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[debug] [2025-12-09T20:39:44.415Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebasedataconnect.googleapis.com 401
+[debug] [2025-12-09T20:39:44.417Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-12-09T20:39:44.417Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-12-09T20:39:44.424Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.425Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.425Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:44.425Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[debug] [2025-12-09T20:39:44.459Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/cloudfunctions.googleapis.com 401
+[debug] [2025-12-09T20:39:44.460Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-12-09T20:39:44.460Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-12-09T20:39:44.461Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.465Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.465Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:44.465Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[debug] [2025-12-09T20:39:44.488Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseapphosting.googleapis.com 401
+[debug] [2025-12-09T20:39:44.492Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-12-09T20:39:44.495Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-12-09T20:39:44.497Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.500Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.504Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:44.505Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[debug] [2025-12-09T20:39:44.536Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseio.com 401
+[debug] [2025-12-09T20:39:44.536Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseio.com [omitted]
+[debug] [2025-12-09T20:39:44.536Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-12-09T20:39:44.545Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.545Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.547Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:44.548Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[debug] [2025-12-09T20:39:44.564Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/cloudfunctions.googleapis.com 401
+[debug] [2025-12-09T20:39:44.565Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-12-09T20:39:44.565Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-12-09T20:39:44.566Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.566Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.566Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:44.569Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[debug] [2025-12-09T20:39:44.592Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firestore.googleapis.com 401
+[debug] [2025-12-09T20:39:44.592Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firestore.googleapis.com [omitted]
+[debug] [2025-12-09T20:39:44.593Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-12-09T20:39:44.593Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.593Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.593Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:44.593Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[debug] [2025-12-09T20:39:44.605Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firestore.googleapis.com 401
+[debug] [2025-12-09T20:39:44.605Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firestore.googleapis.com [omitted]
+[debug] [2025-12-09T20:39:44.605Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-12-09T20:39:44.605Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.605Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.605Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:44.606Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[debug] [2025-12-09T20:39:44.616Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebasedataconnect.googleapis.com 401
+[debug] [2025-12-09T20:39:44.621Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-12-09T20:39:44.624Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-12-09T20:39:44.628Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.629Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.633Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:44.633Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[debug] [2025-12-09T20:39:44.687Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebasedataconnect.googleapis.com 401
+[debug] [2025-12-09T20:39:44.688Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-12-09T20:39:44.688Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-12-09T20:39:44.688Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.688Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.688Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:44.688Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[debug] [2025-12-09T20:39:44.733Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseio.com 401
+[debug] [2025-12-09T20:39:44.734Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseio.com [omitted]
+[debug] [2025-12-09T20:39:44.734Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-12-09T20:39:44.734Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.734Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.734Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:44.735Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[debug] [2025-12-09T20:39:44.741Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseapphosting.googleapis.com 401
+[debug] [2025-12-09T20:39:44.742Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-12-09T20:39:44.742Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-12-09T20:39:44.742Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.742Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.742Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:44.743Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[debug] [2025-12-09T20:39:44.764Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/cloudfunctions.googleapis.com 401
+[debug] [2025-12-09T20:39:44.766Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-12-09T20:39:44.766Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-12-09T20:39:44.766Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.766Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.766Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:44.767Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[debug] [2025-12-09T20:39:44.774Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseapphosting.googleapis.com 401
+[debug] [2025-12-09T20:39:44.775Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-12-09T20:39:44.775Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-12-09T20:39:44.775Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.776Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.776Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:44.781Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[debug] [2025-12-09T20:39:44.793Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseapphosting.googleapis.com 401
+[debug] [2025-12-09T20:39:44.793Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseapphosting.googleapis.com [omitted]
+[debug] [2025-12-09T20:39:44.793Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-12-09T20:39:44.793Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.794Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.794Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:44.794Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[debug] [2025-12-09T20:39:44.805Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebasedataconnect.googleapis.com 401
+[debug] [2025-12-09T20:39:44.805Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-12-09T20:39:44.805Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-12-09T20:39:44.806Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.806Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.813Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:44.813Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[debug] [2025-12-09T20:39:44.815Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firestore.googleapis.com 401
+[debug] [2025-12-09T20:39:44.816Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firestore.googleapis.com [omitted]
+[debug] [2025-12-09T20:39:44.816Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-12-09T20:39:44.818Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.818Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.819Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:44.819Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[debug] [2025-12-09T20:39:44.822Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/cloudfunctions.googleapis.com 401
+[debug] [2025-12-09T20:39:44.823Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-12-09T20:39:44.823Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-12-09T20:39:44.823Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.825Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.825Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:44.825Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[debug] [2025-12-09T20:39:44.830Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseio.com 401
+[debug] [2025-12-09T20:39:44.830Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseio.com [omitted]
+[debug] [2025-12-09T20:39:44.830Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-12-09T20:39:44.831Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.831Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.833Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:44.833Z] > authorizing via signed-in user (gabreil666@gmail.com)
+[debug] [2025-12-09T20:39:44.846Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseio.com 401
+[debug] [2025-12-09T20:39:44.846Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/nextlevel-work-41273848-98e6b/services/firebaseio.com [omitted]
+[debug] [2025-12-09T20:39:44.846Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-12-09T20:39:44.847Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.849Z] No OAuth tokens found
+[debug] [2025-12-09T20:39:44.849Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/userinfo.email"]
+[debug] [2025-12-09T20:39:44.849Z] > authorizing via signed-in user (gabreil666@gmail.com)

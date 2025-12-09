@@ -1,41 +1,69 @@
+# Проект "Next Level" - Экосистема для Знаний
 
-# Menti Flux Blueprint
+## Обзор
 
-## Overview
+"Next Level" — это современная, открытая и безопасная платформа для создания, управления и прохождения онлайн-курсов. Она разработана как единая экосистема, объединяющая:
 
-Menti Flux is a modern, secure, and feature-rich Learning Management System (LMS) designed for businesses of all sizes. It provides a comprehensive platform for creating, managing, and tracking corporate training programs, ensuring a seamless learning experience for employees.
+*   **Обучающихся:** людей, которые ищут новые знания и навыки.
+*   **Преподавателей и авторов курсов:** экспертов, желающих монетизировать свои знания и создать собственный бренд.
+*   **Бизнес:** компании, которые стремятся организовать эффективное внутреннее обучение, а также делиться своей экспертизой с миром.
 
-## Project Details
+Платформа предоставляет гибкие инструменты для создания курсов, аналитики, безопасного доступа к знаниям и интеллектуальной поддержки на базе AI. Ключевое преимущество — **уникальная модель безопасности (Client-Side Encryption)**, которая гарантирует, что контент зашифрованных школ доступен только их владельцам и пользователям, но не администраторам платформы.
 
-### Implemented Features:
+## План сайта
 
-*   **Project Name:** Menti Flux
-*   **Core Functionality:** Learning Management System (LMS)
-*   **Key Sections:**
-    *   **Vision:** Outlines the project's mission and goals.
-    *   **Architecture:** Describes the technical foundation of the platform.
-    *   **Roles:** Defines user roles and permissions (Admin/Instructor vs. Student).
-    *   **KPIs:** A dedicated section to showcase Key Performance Indicators.
-    *   **Admin Panel:** Provides a comprehensive dashboard for managing the LMS.
-    *   **Security:** Details the platform's security measures, including client-side encryption.
-*   **Styling and Design:**
-    *   Modern and clean design using Tailwind CSS.
-    *   Brand colors and fonts for a consistent look and feel.
-    *   Interactive charts for data visualization.
-    *   Responsive design for optimal viewing on all devices.
-*   **Multi-language Support:**
-    *   Ukrainian, English, and French language options.
-    *   Dynamic language switcher in the header.
+1.  **Шапка (Header)**
+    *   Логотип и название "Next Level".
+    *   Навигация: Экосистема, Возможности, AI-Ассистент, Архитектура, Безопасность, Для кого?, Контакты.
+    *   Переключатель языков.
 
-### Current Task:
+2.  **Главный экран (Hero Section)**
+    *   Заголовок: "Next Level: Единая Экосистема для Вашего Роста".
+    *   Подзаголовок: Краткое описание интегрированной среды для обучения, сотрудничества и аналитики.
+    *   Кнопка: "Исследовать Экосистему".
 
-*   **Request:** Change the project name to "Menti Flux" and add a "Key Metrics (KPI)" section.
-*   **Plan:**
-    1.  Update the project name in `index.html` from "Next Level" to "Menti Flux".
-    2.  Create a new "KPI" section in `index.html` with the following metrics:
-        *   Certification: 92%
-        *   Time on Course: 4.5 hours
-        *   Activity: High
-    3.  Add a link to the new "KPI" section in the navigation bar.
-    4.  Update the `blueprint.md` file to reflect these changes.
+3.  **Наша Экосистема (Ecosystem Section)**
+    *   Заголовок: "Наша Экосистема Знаний"
+    *   Подзаголовок: "Платформа Next Level — это больше, чем просто LMS. Это по-настоящему открытая среда, где каждый находит свою роль и возможности для роста."
+    *   Компоненты:
+        *   **LMS Ядро:** Центральный компонент для управления курсами, пользователями и контентом.
+        *   **Маркетплейс Знаний:** Открытый рынок, где авторы могут продавать курсы, а студенты — находить их.
+        *   **Пространство для Сотрудничества:** Инструменты для обмена знаниями: форумы, чаты, вебинары.
+        *   **Центр Аналитики:** Дашборды для отслеживания KPI и эффективности обучения.
 
+4.  **Ключевые Возможности (Features Section)**
+    *   Описание ключевых функций с иконками:
+        *   Кросплатформенность (Web, Mobile, Desktop).
+        *   Геймификация (достижения, баллы, рейтинги).
+        *   Персональный брендинг.
+        *   Гибкая интеграция (API).
+        *   Конструктор курсов.
+        *   Надежная безопасность (CSE).
+
+5.  **AI-Ассистент (на базе Gemini)**
+    *   Описание того, как AI персонализирует обучение, помогает создавать контент и выступает в роли ментора.
+
+6.  **Архитектура (Technical Architecture)**
+    *   Интерактивные карточки "Клиент" и "Бэкенд" с акцентом на надежность и масштабируемость.
+
+7.  **Безопасность (Advanced Security)**
+    *   Интерактивная демонстрация Client-Side Encryption (CSE).
+
+8.  **Для кого наша платформа? (Target Audience Section)**
+    *   Заголовок: "Найдите свою роль в экосистеме"
+    *   Интерактивные карточки с яркими иконками и четкими преимуществами для:
+        *   **Для Бизнеса:** "Создавайте корпоративные университеты, обучайте команды, анализируйте прогресс и управляйте знаниями в единой защищенной системе."
+        *   **Для Преподавателей и Авторов:** "Монетизируйте свою экспертизу. Создавайте и продавайте курсы на открытом маркетплейсе, формируйте личный бренд и взаимодействуйте с глобальной аудиторией."
+        *   **Для Тех, кто учится:** "Инвестируйте в себя. Находите курсы на любой вкус, от программирования до дизайна, и получайте навыки для карьерного роста."
+
+9.  **Присоединяйтесь к Next Level (Contact Section)**
+    *   Заголовок: "Станьте частью будущего образования"
+    *   Подзаголовок: "Выберите свою роль, чтобы начать путешествие с Next Level."
+    *   Интерактивная форма:
+        *   Выпадающий список для выбора роли: "Я хочу учиться", "Я хочу преподавать", "Я представляю бизнес".
+        *   Поля: Имя, Email.
+        *   Текстовое поле для сообщения с динамическим плейсхолдером (например, "Расскажите, чему вы хотите научиться" или "Кратко опишите ваш курс").
+        *   Кнопка "Отправить".
+
+10. **Подвал (Footer)**
+    *   Копирайт, ссылки на соцсети, политика конфиденциальности.
