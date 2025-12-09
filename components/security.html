@@ -1,0 +1,39 @@
+<section id="security" class="py-20 bg-slate-50 dark:bg-slate-900/50 fade-in-up">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4" data-translate-key="security_title">Безпека на першому місці</h2>
+        <p class="max-w-3xl mx-auto text-slate-600 dark:text-slate-300 mb-12" data-translate-key="security_description">
+            Ми використовуємо Client-Side Encryption, щоб гарантувати, що тільки ви маєте доступ до своїх даних. Ваша інформація шифрується на вашому пристрої перед відправкою на наші сервери.
+        </p>
+
+        <!-- Interactive Security Demo -->
+        <div id="security-demo" class="relative max-w-md mx-auto h-64 flex items-center justify-center bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden">
+
+            <!-- State 1: Locked -->
+            <div id="sec-state-locked" class="security-state">
+                <svg class="w-16 h-16 text-red-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                <h3 class="text-xl font-semibold mb-2" data-translate-key="security_locked_title">Дані зашифровано</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400" data-translate-key="security_locked_desc">Ваш контент у безпеці.</p>
+                <button id="start-decryption-btn" class="mt-4 px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-transform transform hover:scale-105" data-translate-key="security_decrypt_button">
+                    Розшифрувати
+                </button>
+            </div>
+
+            <!-- State 2: Processing -->
+            <div id="sec-state-processing" class="security-state is-hidden">
+                <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-500 mb-4"></div>
+                <h3 id="decryption-text" class="text-xl font-semibold mb-2 font-mono" data-translate-key="security_processing_title">Розшифровка...</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400" data-translate-key="security_processing_desc">Будь ласка, зачекайте.</p>
+            </div>
+
+            <!-- State 3: Unlocked -->
+            <div id="sec-state-unlocked" class="security-state is-hidden">
+                <svg class="w-16 h-16 text-green-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 11V7a4 4 0 118 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                <h3 class="text-xl font-semibold mb-2" data-translate-key="security_unlocked_title">Дані розшифровано</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400" data-translate-key="security_unlocked_desc">Тепер ви маєте доступ.</p>
+                <button id="reset-security-btn" class="mt-4 px-4 py-2 bg-slate-600 text-white rounded-md hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 transition-transform transform hover:scale-105" data-translate-key="security_reset_button">
+                    Скинути
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
