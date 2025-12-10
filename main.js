@@ -217,6 +217,15 @@ function initializeEventListeners() {
             langOptions.style.display = 'none'; // Hide dropdown after selection
         }
     });
+
+    // Smooth scroll for logo
+    const logoLink = document.getElementById('logo-link');
+    if (logoLink) {
+        logoLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
     
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
