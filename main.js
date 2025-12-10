@@ -185,6 +185,29 @@ function initializeSecurityDemo() {
     });
 }
 
+// --- DEEP LINKING ---
+function handleDeepLink() {
+    const hash = window.location.hash;
+    if (hash) {
+        // We use a short timeout to ensure all content is rendered
+        setTimeout(() => {
+            const targetElement = document.querySelector(hash);
+            if (targetElement) {
+                const header = document.querySelector('header');
+                const headerOffset = header ? header.offsetHeight : 0;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }, 300); // 300ms delay as a safeguard
+    }
+}
+
+
 // --- APP INITIALIZATION ---
 
 function initializeEventListeners() {
@@ -304,6 +327,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const savedLang = langFromUrl || localStorage.getItem('language') || 'uk';
         await setLanguage(savedLang, true);
         initializeEventListeners();
+        handleDeepLink(); // Handle deep link after everything is loaded
     } catch (error) {
         document.body.innerHTML = '<div style="text-align: center; padding: 50px; font-family: sans-serif;"><h1>Error</h1><p>Could not load page content. Please try again later.</p></div>';
     }
