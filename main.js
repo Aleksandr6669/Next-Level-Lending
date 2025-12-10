@@ -194,32 +194,27 @@ function initializeEventListeners() {
         themeToggleBtn.addEventListener('click', toggleTheme);
     }
 
+    // Language Switcher
     const langSwitcherButton = document.getElementById('language-switcher-button');
     const langOptions = document.getElementById('language-options');
 
-    if (langSwitcherButton && langOptions) {
-        langSwitcherButton.addEventListener('click', (e) => {
-            e.stopPropagation();
-            langOptions.classList.toggle('show');
-            langSwitcherButton.setAttribute('aria-expanded', langOptions.classList.contains('show'));
-        });
-
-        langOptions.addEventListener('click', (e) => {
-            const link = e.target.closest('a[data-lang]');
-            if (link) {
-                e.preventDefault();
-                setLanguage(link.getAttribute('data-lang'));
-                langOptions.classList.remove('show');
-                langSwitcherButton.setAttribute('aria-expanded', 'false');
-            }
-        });
-    }
+    langSwitcherButton?.addEventListener('click', (e) => {
+        e.stopPropagation();
+        langOptions.style.display = langOptions.style.display === 'block' ? 'none' : 'block';
+    });
 
     document.addEventListener('click', (e) => {
-        const container = document.getElementById('language-switcher-container');
-        if (container && !container.contains(e.target) && langOptions) {
-            langOptions.classList.remove('show');
-            if (langSwitcherButton) langSwitcherButton.setAttribute('aria-expanded', 'false');
+        if (langOptions && !langSwitcherButton.contains(e.target) && !langOptions.contains(e.target)) {
+            langOptions.style.display = 'none';
+        }
+    });
+
+    langOptions?.addEventListener('click', (e) => {
+        const link = e.target.closest('a[data-lang]');
+        if (link) {
+            e.preventDefault();
+            setLanguage(link.getAttribute('data-lang'));
+            langOptions.style.display = 'none'; // Hide dropdown after selection
         }
     });
     
