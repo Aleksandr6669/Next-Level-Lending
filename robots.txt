@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Disallow: https://nextlevel.pp.ua/sitemap.xml
+Sitemap: https://nextlevel.pp.ua/sitemap.xml
+Disallow: /sitemap.xml
