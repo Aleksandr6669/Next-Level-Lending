@@ -220,17 +220,31 @@ function initializeEventListeners() {
 
     // Smooth scroll for logo
     const logoLink = document.getElementById('logo-link');
+    const mobileMenu = document.getElementById('mobile-menu'); // Define mobileMenu here to use it in multiple places
     if (logoLink) {
         logoLink.addEventListener('click', function(e) {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
+            // Also close the mobile menu if it's open
+            if (mobileMenu && mobileMenu.classList.contains('is-open')) {
+                mobileMenu.classList.remove('is-open');
+            }
         });
     }
     
+    // Mobile Menu Logic
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if(mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('is-open');
+        });
+
+        // Close menu when a link is clicked
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                mobileMenu.classList.remove('is-open');
+            }
+        });
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

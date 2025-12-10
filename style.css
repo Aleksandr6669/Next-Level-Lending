@@ -24,6 +24,30 @@ main {
     padding-top: 64px; /* 4rem, same as h-16 to offset the fixed header */
 }
 
+/* Mobile Menu Animation */
+#mobile-menu {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+    background-color: white;
+    border-color: transparent; /* Start with transparent border */
+}
+
+#mobile-menu.is-open {
+    max-height: 500px; /* Large enough for the content */
+    padding: 1rem; /* Add padding back when open */
+    border-top: 1px solid #e5e7eb; /* Show border when open */
+}
+
+.dark #mobile-menu {
+    background-color: #1f2937; /* Example dark mode background */
+}
+
+.dark #mobile-menu.is-open {
+    border-top-color: #374151;
+}
+
+
 .fade-in-up {
     opacity: 0;
     transform: translateY(20px);
