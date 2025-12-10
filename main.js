@@ -316,7 +316,7 @@ function initializeEventListeners() {
 document.addEventListener('DOMContentLoaded', async () => {
     const components = [
         'header', 'hero', 'ecosystem', 'features', 'ai_assistant', 
-        'architecture', 'security', 'audience', 'contact', 'footer', 'cta'
+        'architecture', 'security', 'audience', 'contact', 'footer', 'cta',
     ];
 
     try {
