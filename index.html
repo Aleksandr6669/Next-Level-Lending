@@ -13,10 +13,10 @@
     <link rel="canonical" href="https://nextlevel.pp.ua/">
 
     <!-- Hreflang tags -->
-    <link rel="alternate" hreflang="uk" href="https://nextlevel.pp.ua/?lang=uk" />
-    <link rel="alternate" hreflang="en" href="https://nextlevel.pp.ua/?lang=en" />
-    <link rel="alternate" hreflang="fr" href="https://nextlevel.pp.ua/?lang=fr" />
-    <link rel="alternate" hreflang="x-default" href="https://nextlevel.pp.ua/" />
+    <link rel="alternate" hreflang="uk" href="https://nextlevel.pp.ua/?lang=uk">
+    <link rel="alternate" hreflang="en" href="https://nextlevel.pp.ua/?lang=en">
+    <link rel="alternate" hreflang="fr" href="https://nextlevel.pp.ua/?lang=fr">
+    <link rel="alternate" hreflang="x-default" href="https://nextlevel.pp.ua/">
 
     <!-- Favicon -->
     <link rel="icon" href="/logo.svg" type="image/svg+xml">
@@ -35,11 +35,13 @@
     
     <!-- Libraries and Styles -->
     <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="style.css"></noscript>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
 
     <script>
@@ -63,6 +65,110 @@
             }
         }
     </script>
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Next Level",
+          "url": "https://nextlevel.pp.ua/",
+          "logo": "https://nextlevel.pp.ua/logo.svg",
+          "description": "Передова система управління навчанням (LMS) для бізнесу."
+        },
+        {
+          "@type": "WebSite",
+          "name": "Next Level LMS",
+          "url": "https://nextlevel.pp.ua/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://nextlevel.pp.ua/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Що таке модель Client-Side Encryption?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Це підхід, за якого дані шифруються на вашому пристрої перед надсиланням на наші сервери. Це означає, що ніхто, навіть адміністратори платформи, не може отримати доступ до вашого контенту без вашого унікального ключа шифрування."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Чи можу я брендувати свою онлайн-школу?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Так, наша платформа надає широкі можливості для кастомізації. Ви можете використовувати свій логотип, колірну схему, доменне ім'я і повністю адаптувати зовнішній вигляд під ваш корпоративний стиль."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Які інструменти аналітики доступні на платформі?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ми пропонуємо потужний аналітичний центр з дашбордами, що налаштовуються. Ви можете відстежувати прогрес студентів, ефективність курсів, фінансові показники та багато інших KPI в реальному часі."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the Client-Side Encryption model?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This is an approach where data is encrypted on your device before being sent to our servers. This means that no one, not even platform administrators, can access your content without your unique encryption key."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I brand my online school?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, our platform provides extensive customization options. You can use your logo, color scheme, domain name, and fully adapt the appearance to your corporate style."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What analytics tools are available on the platform?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We offer a powerful analytics center with customizable dashboards. You can track student progress, course effectiveness, financial metrics, and many other KPIs in real time."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qu'est-ce que le modèle de chiffrement côté client (Client-Side Encryption) ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "C'est une approche où les données sont chiffrées sur votre appareil avant d'être envoyées à nos serveurs. Cela signifie que personne, pas même les administrateurs de la plateforme, ne peut accéder à votre contenu sans votre clé de chiffrement unique."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Puis-je personnaliser l'image de marque de mon école en ligne ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, notre plateforme offre de vastes options de personnalisation. Vous pouvez utiliser votre logo, votre palette de couleurs, votre nom de domaine et adapter entièrement l'apparence à votre style d'entreprise."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quels outils d'analyse sont disponibles sur la plateforme ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nous proposons un centre d'analyse puissant avec des tableaux de bord personnalisables. Vous можете suivre les progrès des étudiants, l'efficacité des cours, les indicateurs financiers et de nombreux autres KPI en temps réel."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
 </head>
 <body class="bg-slate-50 text-slate-800">
 
@@ -75,11 +181,12 @@
         <div id="architecture-container"></div>
         <div id="security-container"></div>
         <div id="audience-container"></div>
-        <!-- <div id="contact-container"></div> -->
+        <div id="faq-container"></div> 
     </main>
     <div id="footer-container"></div>
 
-    <script src="main.js" defer></script>
+    <script src="main.js" defer=""></script>
 
-</body>
-</html>
+
+
+</body></html>
