@@ -87,6 +87,13 @@ async function setLanguage(lang, isInitial = false) {
     const newTranslations = await loadTranslations(lang);
     if (!newTranslations) return;
 
+    if (!isInitial) {
+        const elements = document.querySelectorAll('[data-translate-key]');
+        elements.forEach(el => el.classList.add('translating'));
+
+        await new Promise(resolve => setTimeout(resolve, 250)); // Wait for fade-out
+    }
+
     currentLang = lang;
     document.documentElement.lang = lang;
     localStorage.setItem('language', lang);
@@ -100,6 +107,11 @@ async function setLanguage(lang, isInitial = false) {
     if (langFlagEl) langFlagEl.textContent = newTranslations.flag;
 
     applyTranslations();
+
+    if (!isInitial) {
+        const elements = document.querySelectorAll('[data-translate-key]');
+        elements.forEach(el => el.classList.remove('translating'));
+    }
 }
 
 function updateURL(lang) {

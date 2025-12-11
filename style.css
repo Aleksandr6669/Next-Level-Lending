@@ -23,6 +23,15 @@ main {
     padding-top: 64px; /* 4rem, same as h-16 to offset the fixed header */
 }
 
+/* Text translation animation */
+[data-translate-key] {
+    transition: opacity 0.25s ease-in-out;
+}
+
+.translating {
+    opacity: 0;
+}
+
 /* Animation for sections */
 .fade-in-up {
     opacity: 0;
