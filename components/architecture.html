@@ -1,40 +1,59 @@
-<section id="architecture" class="py-16 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl font-extrabold text-slate-900 fade-in-up" data-translate-key="arch_title">Архітектура Сучасної LMS</h2>
-                    <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto fade-in-up delay-100" data-translate-key="arch_subtitle">
-                        Наша платформа побудована на надійних технологіях, що гарантують високу продуктивність, масштабованість та кросплатформеність для будь-якого бізнесу.
-                    </p>
+<section id="architecture" class="py-16 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white fade-in-up" data-translate-key="arch_title">Modern LMS Architecture</h2>
+            <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto fade-in-up delay-100" data-translate-key="arch_subtitle">
+                Our platform is built on reliable technologies that guarantee high performance, scalability, and cross-platform compatibility for any business.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            <!-- Clickable Tab: Frontend -->
+            <div data-tech="arch-detail-client" class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 border-l-4 border-blue-500 card-hover cursor-pointer fade-in-up delay-200" aria-label="Show client architecture details">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-bold text-slate-800 dark:text-slate-100" data-translate-key="arch_client_title">Client Monolith</h3>
+                    <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-200">Frontend</span>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-blue-500 card-hover cursor-pointer fade-in-up delay-200" onclick="updateArchDetail('client')" aria-label="Show client architecture details">
-                        <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-xl font-bold text-slate-800" data-translate-key="arch_client_title">Клієнтський Моноліт</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">Frontend</span>
-                        </div>
-                        <div class="space-y-2">
-                            <div class="bg-slate-100 p-3 rounded text-center font-medium">Mobile (iOS/Android)</div>
-                            <div class="bg-slate-100 p-3 rounded text-center font-medium">Web (PWA)</div>
-                            <div class="bg-slate-100 p-3 rounded text-center font-medium">Desktop (Win/Mac/Linux)</div>
-                        </div>
-                        <p class="mt-4 text-sm text-slate-500" data-translate-key="arch_click_details">Натисніть для деталей технології</p>
-                    </div>
-                    <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-orange-500 card-hover cursor-pointer fade-in-up delay-300" onclick="updateArchDetail('backend')" aria-label="Show backend architecture details">
-                         <div class="flex items-center justify-between mb-4">
-                            <h3 class="text-xl font-bold text-slate-800" data-translate-key="arch_backend_title">Бекенд та База Даних</h3>
-                            <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded">BaaS</span>
-                        </div>
-                        <div class="space-y-2">
-                            <div class="bg-slate-100 p-3 rounded text-center font-medium">Firestore (DB)</div>
-                            <div class="bg-slate-100 p-3 rounded text-center font-medium">Authentication</div>
-                            <div class="bg-slate-100 p-3 rounded text-center font-medium">Cloud Messaging (FCM)</div>
-                        </div>
-                        <p class="mt-4 text-sm text-slate-500" data-translate-key="arch_click_details">Натисніть для деталей технології</p>
-                    </div>
+                <div class="space-y-2">
+                    <div class="bg-slate-100 dark:bg-slate-700 p-3 rounded-lg text-center font-medium dark:text-slate-200">Mobile (iOS/Android)</div>
+                    <div class="bg-slate-100 dark:bg-slate-700 p-3 rounded-lg text-center font-medium dark:text-slate-200">Web (PWA)</div>
+                    <div class="bg-slate-100 dark:bg-slate-700 p-3 rounded-lg text-center font-medium dark:text-slate-200">Desktop (Win/Mac/Linux)</div>
                 </div>
-                <div id="arch-detail-box" class="mt-8 bg-brand-50 border border-brand-200 rounded-lg p-6 text-center transition-all duration-300 fade-in-up delay-400">
-                    <h4 class="text-lg font-bold text-brand-900" id="arch-title-display" data-translate-key="arch_detail_placeholder_title">Оберіть компонент вище</h4>
-                    <p class="mt-2 text-brand-700" id="arch-desc-display" data-translate-key="arch_detail_placeholder_desc">Дізнайтеся, які технології використовуються для забезпечення швидкодії та безпеки.</p>
-                </div>
+                <p class="mt-4 text-sm text-slate-500 dark:text-slate-400" data-translate-key="arch_click_details">Click for technology details</p>
             </div>
-        </section>
+
+            <!-- Clickable Tab: Backend -->
+            <div data-tech="arch-detail-backend" class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 border-l-4 border-orange-500 card-hover cursor-pointer fade-in-up delay-300" aria-label="Show backend architecture details">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-bold text-slate-800 dark:text-slate-100" data-translate-key="arch_backend_title">Backend & Database</h3>
+                    <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-orange-900 dark:text-orange-200">BaaS</span>
+                </div>
+                <div class="space-y-2">
+                    <div class="bg-slate-100 dark:bg-slate-700 p-3 rounded-lg text-center font-medium dark:text-slate-200">Firestore (DB)</div>
+                    <div class="bg-slate-100 dark:bg-slate-700 p-3 rounded-lg text-center font-medium dark:text-slate-200">Authentication</div>
+                    <div class="bg-slate-100 dark:bg-slate-700 p-3 rounded-lg text-center font-medium dark:text-slate-200">Cloud Messaging (FCM)</div>
+                </div>
+                <p class="mt-4 text-sm text-slate-500 dark:text-slate-400" data-translate-key="arch_click_details">Click for technology details</p>
+            </div>
+        </div>
+
+        <!-- Detail Panels -->
+        <div class="mt-8 transition-all duration-300 fade-in-up delay-400 min-h-[150px]">
+            <!-- Frontend Details (Hidden by default) -->
+            <div id="arch-detail-client" class="arch-detail bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-500/30 rounded-lg p-6 is-hidden">
+                <h4 class="text-lg font-bold text-blue-900 dark:text-blue-200" data-translate-key="arch_frontend_detail_title">Unified Frontend: Web Components & PWA</h4>
+                <p class="mt-2 text-blue-800 dark:text-blue-300" data-translate-key="arch_frontend_detail_desc">
+                    We use a single codebase based on modern Web Components to build the application for all platforms. This Progressive Web App (PWA) installs on mobile and desktop devices, providing a native-like experience with offline access and push notifications, while minimizing development and maintenance costs.
+                </p>
+            </div>
+
+            <!-- Backend Details (Hidden by default) -->
+            <div id="arch-detail-backend" class="arch-detail bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-500/30 rounded-lg p-6 is-hidden">
+                <h4 class="text-lg font-bold text-orange-900 dark:text-orange-200" data-translate-key="arch_backend_detail_title">Serverless Backend: Firebase (BaaS)</h4>
+                <p class="mt-2 text-orange-800 dark:text-orange-300" data-translate-key="arch_backend_detail_desc">
+                    Our backend leverages Firebase, a powerful Backend-as-a-Service (BaaS) platform. We use Firestore for a scalable NoSQL database, Firebase Authentication for secure user management, and Cloud Functions for serverless computing. This serverless architecture ensures high availability, automatic scaling, and reduced operational overhead.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
