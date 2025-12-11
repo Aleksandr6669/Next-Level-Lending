@@ -85,10 +85,10 @@ main {
     opacity: 1;
 }
 
-.security-state.hidden {
-    opacity: 0;
-    transform: scale(0.95);
-    pointer-events: none; /* Make it non-interactive when hidden */
+.is-hidden {
+    opacity: 0 !important;
+    transform: scale(0.95) !important;
+    pointer-events: none !important; /* Make it non-interactive when hidden */
 }
 
 #decryption-text {
