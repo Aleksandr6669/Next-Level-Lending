@@ -201,28 +201,49 @@ function initializeArchitectureDiagram() {
     const section = document.getElementById('architecture');
     if (!section) return;
 
-    const cards = section.querySelectorAll('.arch-card');
-    const details = section.querySelectorAll('.arch-detail');
-    const placeholder = section.querySelector('#arch-detail-placeholder');
+    const setupArchitectureGroup = (cardGroupId, detailContainerClass) => {
+        const cardGroup = document.getElementById(cardGroupId);
+        if (!cardGroup) return;
 
-    cards.forEach(card => {
-        card.addEventListener('click', () => {
+        const cards = cardGroup.querySelectorAll('.arch-card');
+        const detailContainer = cardGroup.nextElementSibling;
+        const details = detailContainer.querySelectorAll('.arch-detail');
+        const placeholder = detailContainer.querySelector('.arch-detail-placeholder');
+
+        cardGroup.addEventListener('click', (e) => {
+            const card = e.target.closest('.arch-card');
+            if (!card) return;
+
             const tech = card.dataset.tech;
-            const detailPanel = section.querySelector(`#arch-detail-${tech}`);
-
+            const targetDetail = detailContainer.querySelector(`.arch-detail[data-tech='${tech}']`);
+            
+            // If the same card is clicked, do nothing.
             if (card.classList.contains('active')) {
                 return;
             }
 
+            // Update cards state
             cards.forEach(c => c.classList.remove('active'));
-            details.forEach(d => d.classList.add('hidden'));
-
             card.classList.add('active');
-            if(placeholder) placeholder.classList.add('hidden');
-            if(detailPanel) detailPanel.classList.remove('hidden');
+
+            // Hide placeholder
+            if (placeholder) placeholder.classList.add('hidden-placeholder');
+
+            // Transition details
+            details.forEach(detail => {
+                if (detail === targetDetail) {
+                    detail.classList.add('active');
+                } else {
+                    detail.classList.remove('active');
+                }
+            });
         });
-    });
+    };
+
+    setupArchitectureGroup('arch-frontend-cards');
+    setupArchitectureGroup('arch-backend-cards');
 }
+
 
 // --- EVENT LISTENERS INITIALIZATION ---
 

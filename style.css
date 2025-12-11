@@ -107,7 +107,7 @@ main {
 
 /* Architecture Diagram styles */
 .arch-card {
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .card-hover:hover {
@@ -120,7 +120,7 @@ main {
 }
 
 .arch-card.active {
-    transform: translateY(-5px) scale(1.05);
+    transform: translateY(-5px) scale(1.03);
     @apply shadow-xl;
 }
 
@@ -129,9 +129,43 @@ main {
 }
 
 .arch-card.active.border-blue-500 {
-    border-color: #60a5fa !important; /* a lighter blue */
+    border-color: #60a5fa !important;
 }
 
 .arch-card.active.border-green-500 {
-    border-color: #4ade80 !important; /* a lighter green */
+    border-color: #4ade80 !important;
+}
+
+/* Architecture detail panel transitions */
+.arch-detail-container {
+    position: relative;
+    min-height: 140px; /* Adjust as needed */
+}
+
+.arch-detail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    pointer-events: none;
+}
+
+.arch-detail.active {
+    opacity: 1;
+    position: relative; /* Take up space in the flow */
+    pointer-events: auto;
+}
+
+.arch-detail-placeholder {
+    position: relative; /* Not absolute, always in the flow */
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.arch-detail-placeholder.hidden-placeholder {
+     opacity: 0;
+     pointer-events: none;
+     position: absolute;
 }
