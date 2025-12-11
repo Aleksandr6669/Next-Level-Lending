@@ -1,44 +1,40 @@
-# Blueprint: Проект "Next Level"
+# Blueprint: Next Level LMS
 
-## 1. Обзор проекта
+## Overview
 
-"Next Level" — это современная, открытая и безопасная платформа для онлайн-курсов, объединяющая обучающихся, преподавателей и бизнес. Ключевые особенности включают маркетплейс курсов, инструменты для совместной работы, аналитику и уникальную модель шифрования на стороне клиента (Client-Side Encryption) для обеспечения конфиденциальности данных.
+This document outlines the architecture, features, and implementation plan for the Next Level LMS, a modern, secure, and feature-rich learning management system.
 
-## 2. Реализованные функции и дизайн
+## Implemented Features
 
-Этот раздел документирует все функции и элементы дизайна, реализованные в приложении на данный момент.
+### Core
 
-### 2.1. Общий дизайн и UX
-*   **Переключатель тем (Светлая/Тёмная):** Пользователи могут выбирать между светлым и тёмным режимами. Выбор сохраняется в `localStorage`.
-*   **"Липкая" шапка:** Шапка зафиксирована вверху страницы и имеет эффект размытия (`blur(20px)`) для современного вида.
-*   **Плавная прокрутка:** Реализована для всех якорных ссылок.
-*   **Адаптивный дизайн:** Используется Tailwind CSS для корректного отображения на мобильных устройствах и десктопах.
-*   **Анимации:** Плавное появление секций и карточек при прокрутке страницы (`fade-in-up`).
-*   **Локализация:** Поддержка нескольких языков с динамической сменой контента.
+*   **Component-Based Architecture:** The application is built using a component-based architecture, with different sections of the application broken down into their own HTML files (e.g., `header.html`, `hero.html`, etc.).
+*   **Asynchronous Component Loading:** Components are loaded asynchronously into the main `index.html` file using a JavaScript-based loading script.
+*   **Internationalization (i18n):** The application has been fully internationalized to support multiple languages. This includes:
+    *   **Translation Keys:** All hardcoded text in HTML files and JavaScript has been replaced with `data-translate-key` attributes.
+    *   **Translation Files:** JSON files for English (`en.json`), French (`fr.json`), and Ukrainian (`uk.json`) have been created.
+    *   **Language Switcher:** A dynamic language switcher has been implemented in the header.
+*   **Responsive Design:** The application is fully responsive and optimized for both desktop and mobile devices.
 
-### 2.2. SEO и структурированные данные
-*   **Базовые SEO-теги:** Заполнены `title`, `description`, `canonical`, `hreflang` и Open Graph теги.
-*   **Индексация:** Добавлены файлы `sitemap.xml` и `robots.txt`.
-*   **Структурированные данные (Schema.org):**
-    *   **Единый граф данных:** Реализован один блок JSON-LD с использованием `@graph` для объединения всей информации о странице.
-    *   **Organization и WebSite:** Добавлена стандартная разметка о компании и сайте.
-    *   **FAQPage (многоязычный, корректная реализация):** Создан **единственный** объект `FAQPage`. Внутри каждого вопроса (`Question`) текстовые поля `name` (вопрос) и `text` (ответ) реализованы как массив языковых объектов (`{"@language": "uk", "@value": "..."}`). Это единственно верный метод, соответствующий стандарту интернационализации Schema.org, который решает проблему дублирования и позволяет Google корректно обрабатывать все языковые версии.
+### Features
 
-### 2.3. Разделы сайта (Компоненты)
-*   **Шапка (Header):** Логотип, навигационное меню, переключатель языков и переключатель тем.
-*   **Главный экран (Hero):** Основной заголовок и призыв к действию.
-*   **Экосистема (Ecosystem):** Обзор компонентов платформы.
-*   **Возможности (Features):** Сетка, демонстрирующая ключевые возможности.
-*   **AI-Ассистент:** Раздел, описывающий роль искусственного интеллекта.
-*   **Архитектура (Architecture):** Интерактивный раздел с описанием клиентской и серверной частей.
-*   **Безопасность (Security):** Интерактивная демонстрация концепции Client-Side Encryption.
-*   **Аудитория (Audience):** Карточки, описывающие преимущества платформы для разных ролей.
-*   **FAQ (Часто задаваемые вопросы):** Интерактивный раздел в виде "аккордеона".
-*   **Подвал (Footer):** Стандартный футер с копирайтом и ссылками.
+*   **Hero Section:** A prominent hero section that introduces the platform.
+*   **Ecosystem Section:** A section that details the different components of the Next Level ecosystem.
+*   **Features Section:** A section that highlights the key features of the platform.
+*   **AI Assistant Section:** A section that showcases the AI-powered features of the platform.
+*   **Architecture Section:** A section that provides an overview of the technical architecture of the platform.
+*   **Security Section:** A section that details the security features of the platform.
+*   **Audience Section:** A section that describes the target audience for the platform.
+*   **CTA Section:** A call-to-action section that encourages users to sign up for a demo.
+*   **FAQ Section:** A frequently asked questions section.
+*   **Footer:** A standard footer with copyright information.
 
----
+## Current Plan: Internationalization
 
-## 3. Завершенные задачи по оптимизации и SEO
+*   **Status:** Completed
+*   **Steps Taken:**
+    1.  Replaced all hardcoded text in HTML and JavaScript with `data-translate-key` attributes.
+    2.  Created `en.json`, `fr.json`, and `uk.json` translation files.
+    3.  Updated the JavaScript to dynamically load the appropriate language based on user preference or browser settings.
+    4.  Fixed issues with the component loading script in `index.html`.
 
-*   **Оптимизация производительности:** Устранены блокирующие рендеринг ресурсы, исправлены ошибки 404, удален неиспользуемый код, устранен сдвиг макета (CLS).
-*   **Исправление критической ошибки SEO:** Устранена ошибка "Поле 'FAQPage' дублируется". После нескольких неверных попыток была реализована **единственно правильная** структура многоязычной разметки согласно стандарту Schema.org, где внутри одного объекта `FAQPage` текстовые поля содержат массив языковых версий. Это гарантирует корректную обработку поисковыми системами.

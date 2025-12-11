@@ -41,8 +41,8 @@
     <noscript><link rel="stylesheet" href="style.css"></noscript>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
 
     <script>
@@ -445,12 +445,12 @@
         <div id="architecture-container"></div>
         <div id="security-container"></div>
         <div id="audience-container"></div>
-        <div id="cta-placeholder"></div>
+        <div id="cta-container"></div>
         <div id="faq-container"></div> 
     </main>
     <div id="footer-container"></div>
 
-    <script src="main.js" defer=""></script>
+    <script src="main.js" defer></script>
     <script>
       // Asynchronously load components into their placeholders
       function loadComponent(component, placeholderId) {
@@ -463,20 +463,18 @@
       }
       
       document.addEventListener('DOMContentLoaded', () => {
-        loadComponent('header', 'header-placeholder');
-        loadComponent('hero', 'hero-placeholder');
-        loadComponent('ecosystem', 'ecosystem-placeholder');
-        loadComponent('features', 'features-placeholder');
-        loadComponent('ai_assistant', 'ai-assistant-placeholder');
-        loadComponent('architecture', 'architecture-placeholder');
-        loadComponent('security', 'security-placeholder');
-        loadComponent('audience', 'audience-placeholder');
-        // loadComponent('faq', 'faq-placeholder');
-        loadComponent('cta', 'cta-placeholder');
-        loadComponent('footer', 'footer-placeholder');
+        loadComponent('header', 'header-container');
+        loadComponent('hero', 'hero-container');
+        loadComponent('ecosystem', 'ecosystem-container');
+        loadComponent('features', 'features-container');
+        loadComponent('ai_assistant', 'ai_assistant-container');
+        loadComponent('architecture', 'architecture-container');
+        loadComponent('security', 'security-container');
+        loadComponent('audience', 'audience-container');
+        loadComponent('faq', 'faq-container');
+        loadComponent('cta', 'cta-container');
+        loadComponent('footer', 'footer-container');
       });
     </script>
-
-
-
-</body></html>
+</body>
+</html>

@@ -38,7 +38,7 @@ async function loadComponent(name) {
     } catch (error) {
         console.error(`Failed to load component ${name}:`, error);
         const container = document.getElementById(`${name}-container`);
-        if(container) container.innerHTML = `<p style="color: red; text-align: center;">Failed to load ${name}.</p>`;
+        if(container) container.innerHTML = `<p style="color: red; text-align: center;" data-translate-key="load_component_error">Failed to load ${name}.</p>`;
     }
 }
 
@@ -105,7 +105,7 @@ async function setLanguage(lang, isInitial = false) {
 function updateURL(lang) {
     const url = new URL(window.location);
     url.searchParams.set('lang', lang);
-    window.history.pushState({}, '', url);
+    // window.history.pushState({}, '', url);
 }
 
 // --- COMPONENT-SPECIFIC LOGIC ---
@@ -311,6 +311,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     } catch (error) {
         console.error("App initialization failed:", error);
-        document.body.innerHTML = '<div style="text-align: center; padding: 50px; font-family: sans-serif;"><h1>Error</h1><p>Could not load page content. Please try again later.</p></div>';
+        document.body.innerHTML = '<div style="text-align: center; padding: 50px; font-family: sans-serif;" data-translate-key="app_init_error"><h1>Error</h1><p>Could not load page content. Please try again later.</p></div>';
     }
 });
