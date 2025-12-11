@@ -71,7 +71,6 @@ function applyTranslations(container = document) {
             } else if (el.tagName === 'TEXTAREA' || el.tagName === 'INPUT') {
                 el.placeholder = currentTranslations[key];
             } else {
-                // Corrected: Use innerHTML to preserve HTML tags like <br> within translations.
                 el.innerHTML = currentTranslations[key];
             }
         }
@@ -141,21 +140,21 @@ function initializeSecurityDemo() {
         const decryptionTextEl = document.getElementById('decryption-text');
 
         if (startBtn && lockedState && processingState && unlockedState && decryptionTextEl) {
-            lockedState.classList.add('is-hidden');
-            processingState.classList.remove('is-hidden');
+            lockedState.classList.add('hidden');
+            processingState.classList.remove('hidden');
 
             const originalText = translations[currentLang]?.['security_processing_title'] || 'Decrypting...';
             scrambleText(decryptionTextEl, originalText, 1500);
 
             setTimeout(() => {
-                processingState.classList.add('is-hidden');
-                unlockedState.classList.remove('is-hidden');
+                processingState.classList.add('hidden');
+                unlockedState.classList.remove('hidden');
             }, 2000);
         }
 
         if (resetBtn && lockedState && unlockedState && decryptionTextEl) {
-            unlockedState.classList.add('is-hidden');
-            lockedState.classList.remove('is-hidden');
+            unlockedState.classList.add('hidden');
+            lockedState.classList.remove('hidden');
             decryptionTextEl.textContent = translations[currentLang]?.['security_processing_title'] || 'Decrypting...';
         }
     });
@@ -202,24 +201,29 @@ function handleDeepLink() {
 }
 
 function initializeArchitectureDiagram() {
-    const archContainer = document.getElementById('architecture-container');
-    if (!archContainer) return;
+    const section = document.getElementById('architecture');
+    if (!section) return;
 
-    archContainer.addEventListener('click', function(event) {
-        const selectedTab = event.target.closest('[data-tech]');
-        if (!selectedTab) return;
+    const cards = section.querySelectorAll('.arch-card');
+    const details = section.querySelectorAll('.arch-detail');
+    const placeholder = section.querySelector('#arch-detail-placeholder');
 
-        const wasActive = selectedTab.classList.contains('active');
-        const detailId = selectedTab.getAttribute('data-tech');
-        const detailPanel = document.getElementById(detailId);
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            const tech = card.dataset.tech;
+            const detailPanel = section.querySelector(`#arch-detail-${tech}`);
 
-        archContainer.querySelectorAll('[data-tech]').forEach(tab => tab.classList.remove('active'));
-        archContainer.querySelectorAll('.arch-detail').forEach(panel => panel.classList.add('is-hidden'));
+            if (card.classList.contains('active')) {
+                return;
+            }
 
-        if (!wasActive && detailPanel) {
-            selectedTab.classList.add('active');
-            detailPanel.classList.remove('is-hidden');
-        }
+            cards.forEach(c => c.classList.remove('active'));
+            details.forEach(d => d.classList.add('hidden'));
+
+            card.classList.add('active');
+            if(placeholder) placeholder.classList.add('hidden');
+            if(detailPanel) detailPanel.classList.remove('hidden');
+        });
     });
 }
 

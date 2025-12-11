@@ -3,21 +3,17 @@
     "meta_description": "Découvrez Next Level - un système de gestion de l'apprentissage (LMS) de pointe conçu pour la formation en entreprise et l'éducation en ligne. Sécurité, analyses et contrôle total.",
     "og_title": "Next Level LMS : Plateforme innovante pour la formation en entreprise",
     "og_description": "Transformez la formation dans votre entreprise avec Next Level. Notre écosystème offre des outils flexibles pour la création de cours, l'analyse et un accès sécurisé aux connaissances.",
-
     "name": "Français",
     "flag": "🇫🇷",
-
     "nav_ecosystem": "Écosystème",
     "nav_features": "Fonctionnalités",
     "nav_audience": "Pour qui ?",
     "nav_contact": "Contact",
     "nav_language": "Langue",
     "theme_toggle": "Changer de thème",
-
     "hero_title": "LMS nouvelle génération <br> pour votre entreprise",
     "hero_subtitle": "Créez, gérez et monétisez les connaissances dans un écosystème unique qui combine un noyau LMS puissant, une place de marché de connaissances innovante et un assistant IA intelligent.",
     "hero_cta": "Demander une démo",
-
     "ecosystem_title": "Un écosystème unique pour la création et la gestion des connaissances",
     "ecosystem_subtitle": "Notre plateforme est un écosystème complet qui rassemble tous les outils nécessaires à la formation en entreprise et à l'éducation commerciale.",
     "lms_core_title": "Noyau LMS central : Une boîte à outils puissante pour l'apprentissage",
@@ -26,7 +22,6 @@
     "marketplace_desc": "Nous avons créé une place de marché unique qui permet aux experts et aux entreprises de vendre leurs cours et leur matériel pédagogique. Cela ouvre de nouvelles opportunités de monétisation de l'expertise et crée un environnement concurrentiel où les utilisateurs ont accès au meilleur contenu éducatif.",
     "ai_assistant_title": "Votre assistant IA personnel",
     "ai_assistant_desc": "L'intelligence artificielle intégrée aide à créer la structure des cours, à générer des idées de leçons, à adapter le matériel à différents publics et à répondre aux questions des étudiants 24/7.",
-
     "features_title": "Principales fonctionnalités de la plateforme",
     "features_subtitle": "Nous offrons une suite complète d'outils pour une gestion efficace et sécurisée du processus d'apprentissage.",
     "security_title": "Sécurité absolue avec le chiffrement côté client",
@@ -37,7 +32,6 @@
     "branding_desc": "Créez un espace éducatif unique qui correspond entièrement à votre marque. La plateforme offre de nombreuses options de personnalisation : du logo et du jeu de couleurs à votre propre nom de domaine.",
     "api_title": "Intégrations API flexibles pour des capacités étendues",
     "api_desc": "Notre plateforme s'intègre facilement à d'autres systèmes d'entreprise, tels que les CRM, les systèmes RH et les passerelles de paiement, grâce à notre API REST flexible. Cela permet d'automatiser les processus métier et de synchroniser les données.",
-
     "ai_main_title": "Réduisez le temps de développement des cours par 10 avec l'assistant IA",
     "ai_main_desc": "Notre assistant intégré basé sur l'IA est votre partenaire fiable pour la création de contenu d'apprentissage. Il analyse vos besoins et propose des solutions prêtes à l'emploi, vous libérant du temps pour l'essentiel : un apprentissage de qualité.",
     "ai_feature_1": "Génération de la structure du cours",
@@ -48,17 +42,23 @@
     "ai_feature_3_desc": "L'IA aidera à adapter la complexité et le style du contenu pour différents publics cibles.",
     "ai_feature_4": "Traduction et localisation",
     "ai_feature_4_desc": "Traduisez instantanément vos cours dans des dizaines de langues, élargissant ainsi votre audience mondiale.",
-
     "arch_title": "Architecture LMS moderne",
     "arch_subtitle": "Notre plateforme est construite sur des technologies fiables qui garantissent des performances élevées, une évolutivité et une compatibilité multiplateforme pour toute entreprise.",
-    "arch_client_title": "Monolithe Client",
-    "arch_backend_title": "Backend & Base de données",
-    "arch_click_details": "Cliquez pour les détails",
-    "arch_frontend_detail_title": "Frontend unifié : Web Components & PWA",
-    "arch_frontend_detail_desc": "Nous utilisons une base de code unique basée sur des composants Web modernes pour construire l'application pour toutes les plateformes. Cette Progressive Web App (PWA) s'installe sur les appareils mobiles et de bureau, offrant une expérience de type natif avec un accès hors ligne et des notifications push, tout en minimisant les coûts de développement et de maintenance.",
-    "arch_backend_detail_title": "Backend sans serveur : Firebase (BaaS)",
-    "arch_backend_detail_desc": "Notre backend s'appuie sur Firebase, une puissante plateforme Backend-as-a-Service (BaaS). Nous utilisons Firestore pour une base de données NoSQL évolutive, Firebase Authentication pour une gestion sécurisée des utilisateurs et Cloud Functions pour le calcul sans serveur. Cette architecture sans serveur garantit une haute disponibilité, une mise à l'échelle automatique et une réduction des frais d'exploitation.",
-
+    "arch_web_title": "Web (PWA)",
+    "arch_web_desc": "Notre application web progressive (PWA) offre une expérience similaire à une application native sur tous les navigateurs modernes. Elle est installable, fonctionne hors ligne et reçoit des notifications push, garantissant un accès universel sans passer par un magasin d'applications.",
+    "arch_desktop_title": "Bureau (Win/Mac/Linux)",
+    "arch_desktop_desc": "Grâce à la technologie PWA, notre application peut être installée directement sur les systèmes Windows, macOS et Linux. Les utilisateurs bénéficient d'une expérience de bureau autonome avec intégration au dock/barre des tâches et des mises à jour transparentes.",
+    "arch_mobile_title": "Mobile (iOS/Android)",
+    "arch_mobile_desc": "L'application est entièrement responsive et installable sur les appareils iOS et Android directement depuis le navigateur. Elle offre une expérience en plein écran, des capacités hors ligne et un accès aux fonctionnalités natives de l'appareil, tout comme une application traditionnelle.",
+    "arch_db_title": "Base de données Firestore",
+    "arch_db_desc": "Nous utilisons Firestore, une base de données cloud NoSQL flexible et évolutive, pour stocker et synchroniser les données en temps réel. Ses puissantes capacités d'interrogation et ses règles de sécurité robustes nous permettent de créer des applications réactives et sécurisées.",
+    "arch_auth_title": "Authentification Firebase",
+    "arch_auth_desc": "Fournit des systèmes d'authentification sécurisés et faciles à utiliser. Nous prenons en charge l'email/mot de passe, les connexions sociales (Google, Facebook, etc.), le tout géré par un service backend sécurisé.",
+    "arch_functions_title": "Cloud Functions",
+    "arch_functions_desc": "Pour la logique côté serveur, nous utilisons Cloud Functions, un service de calcul sans serveur. Cela nous permet d'exécuter du code backend en réponse à des événements déclenchés par les fonctionnalités Firebase et les requêtes HTTPS, sans gérer de serveurs.",
+    "arch_hosting_title": "Hébergement Firebase",
+    "arch_hosting_desc": "Notre application est déployée sur Firebase Hosting, qui fournit un hébergement rapide et sécurisé pour les applications web. Avec un CDN mondial, des certificats SSL gratuits et la prise en charge de domaines personnalisés, il garantit une expérience utilisateur fiable.",
+    "arch_click_details": "Cliquez sur une technologie ci-dessus pour voir les détails.",
     "security_main_title": "Sécurité des données de référence",
     "security_main_subtitle": "Nous avons développé un système de sécurité complet basé sur une technologie de chiffrement côté client de pointe. Cela garantit que vous seul avez un contrôle total sur vos données.",
     "security_state_locked": "Chiffré",
@@ -71,7 +71,6 @@
     "security_unlocked_title": "Accès accordé",
     "security_unlocked_desc": "Vos données ont été déchiffrées avec succès sur votre appareil et sont prêtes à être utilisées. Le serveur ne les voit jamais en clair.",
     "security_unlocked_button": "Re-chiffrer",
-
     "audience_title": "Créé pour votre succès",
     "audience_subtitle": "Notre plateforme LMS est la solution idéale pour un large éventail d'utilisateurs, des grandes entreprises aux experts indépendants cherchant à monétiser leurs connaissances.",
     "audience_business_title": "Pour les entreprises",
@@ -80,7 +79,6 @@
     "audience_teachers_desc": "Créez et vendez vos propres cours sur notre place de marché. Nous fournissons tous les outils nécessaires : du constructeur de cours aux systèmes de paiement. Concentrez-vous sur la création de contenu de qualité, et nous nous occuperons des questions techniques et de la promotion.",
     "audience_students_title": "Pour les étudiants",
     "audience_students_desc": "Accédez à une éducation de qualité à tout moment et depuis n'importe quel appareil. Notre plateforme offre une interface intuitive, du matériel interactif et la possibilité de communiquer avec les enseignants et les autres étudiants. L'apprentissage devient passionnant et efficace.",
-
     "contact_title": "Restons en contact",
     "contact_subtitle": "Vous avez une question ou êtes prêt à commencer ? Remplissez le formulaire, et notre équipe vous contactera sous peu.",
     "contact_role_label": "Votre rôle",
@@ -93,7 +91,6 @@
     "contact_placeholder_student": "Bonjour ! J'aimerais en savoir plus sur les cours disponibles...",
     "contact_placeholder_teacher": "Bonjour ! Je suis intéressé(e) par la possibilité de publier mon cours sur votre plateforme...",
     "contact_placeholder_business": "Bonjour. Notre entreprise envisage votre LMS pour la formation en interne. Pouvons-nous obtenir un accès démo ?",
-
     "footer_description": "Un écosystème innovant pour créer, gérer et monétiser les connaissances.",
     "footer_product_title": "Produit",
     "footer_ecosystem": "Écosystème",
@@ -109,7 +106,6 @@
     "footer_privacy": "Politique de confidentialité",
     "footer_terms": "Conditions d'utilisation",
     "footer_rights": "© 2024 Next Level. Tous droits réservés.",
-
     "cta_title": "Prêt à faire passer votre apprentissage au niveau supérieur ?",
     "cta_desc": "Rejoignez des centaines d'entreprises et d'experts qui transforment déjà l'éducation avec nous. Demandez une démo personnalisée pour voir toutes les fonctionnalités de la plateforme en action.",
     "cta_button": "Demander une démo gratuite"

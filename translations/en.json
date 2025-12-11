@@ -3,21 +3,17 @@
     "meta_description": "Discover Next Level - an advanced Learning Management System (LMS) designed for corporate training and online education. Security, analytics, and full control.",
     "og_title": "Next Level LMS: Innovative Platform for Corporate Training",
     "og_description": "Transform training in your company with Next Level. Our ecosystem offers flexible tools for course creation, analytics, and secure knowledge access.",
-
     "name": "English",
     "flag": "🇬🇧",
-
     "nav_ecosystem": "Ecosystem",
     "nav_features": "Features",
     "nav_audience": "For Whom?",
     "nav_contact": "Contact",
     "nav_language": "Language",
     "theme_toggle": "Toggle theme",
-
     "hero_title": "Next-generation LMS <br> for your business",
     "hero_subtitle": "Create, manage, and monetize knowledge in a unified ecosystem that combines a powerful LMS core, an innovative knowledge marketplace, and an intelligent AI assistant.",
     "hero_cta": "Request a Demo",
-
     "ecosystem_title": "A Unified Ecosystem for Knowledge Creation and Management",
     "ecosystem_subtitle": "Our platform is a complete ecosystem that brings together all the necessary tools for corporate training and commercial education.",
     "lms_core_title": "Central LMS Core: A Powerful Toolkit for Learning",
@@ -26,7 +22,6 @@
     "marketplace_desc": "We have created a unique marketplace that allows experts and companies to sell their courses and educational materials. This opens up new opportunities for monetizing expertise and creates a competitive environment where users get access to the best educational content.",
     "ai_assistant_title": "Your Personal AI Assistant",
     "ai_assistant_desc": "The integrated artificial intelligence helps create course structures, generate ideas for lessons, adapt materials for different audiences, and answer student questions 24/7.",
-
     "features_title": "Key Features of the Platform",
     "features_subtitle": "We offer a comprehensive suite of tools for effective and secure management of the learning process.",
     "security_title": "Absolute Security with Client-Side Encryption",
@@ -37,7 +32,6 @@
     "branding_desc": "Create a unique educational space that fully aligns with your brand. The platform offers extensive customization options: from the logo and color scheme to your own domain name.",
     "api_title": "Flexible API Integrations for Extended Capabilities",
     "api_desc": "Our platform easily integrates with other corporate systems, such as CRM, HR systems, and payment gateways, thanks to our flexible REST API. This allows for the automation of business processes and data synchronization.",
-
     "ai_main_title": "Reduce Course Development Time by 10x with the AI Assistant",
     "ai_main_desc": "Our built-in AI-based assistant is your reliable partner in creating learning content. It analyzes your needs and offers ready-made solutions, freeing up your time for what matters most: quality learning.",
     "ai_feature_1": "Course Structure Generation",
@@ -48,17 +42,23 @@
     "ai_feature_3_desc": "The AI will help adapt the complexity and style of the content for different target audiences.",
     "ai_feature_4": "Translation and Localization",
     "ai_feature_4_desc": "Instantly translate your courses into dozens of languages, expanding your global audience.",
-
     "arch_title": "Modern LMS Architecture",
     "arch_subtitle": "Our platform is built on reliable technologies that ensure high performance, scalability, and cross-platform compatibility for any business.",
-    "arch_client_title": "Client Monolith",
-    "arch_backend_title": "Backend & Database",
-    "arch_click_details": "Click for details",
-    "arch_frontend_detail_title": "Unified Frontend: Web Components & PWA",
-    "arch_frontend_detail_desc": "We use a single codebase based on modern Web Components to build the application for all platforms. This Progressive Web App (PWA) is installable on mobile and desktop devices, providing a native-like experience with offline access and push notifications, while minimizing development and maintenance costs.",
-    "arch_backend_detail_title": "Serverless Backend: Firebase (BaaS)",
-    "arch_backend_detail_desc": "Our backend relies on Firebase, a powerful Backend-as-a-Service (BaaS) platform. We use Firestore for a scalable NoSQL database, Firebase Authentication for secure user management, and Cloud Functions for serverless computing. This serverless architecture ensures high availability, automatic scaling, and reduced operational overhead.",
-    
+    "arch_web_title": "Web (PWA)",
+    "arch_web_desc": "Our Progressive Web App (PWA) provides a native-like experience on all modern browsers. It's installable, works offline, and receives push notifications, ensuring universal access without the need for an app store.",
+    "arch_desktop_title": "Desktop (Win/Mac/Linux)",
+    "arch_desktop_desc": "Thanks to PWA technology, our application can be installed directly onto Windows, macOS, and Linux systems. Users get a standalone desktop experience with dock/taskbar integration and seamless updates.",
+    "arch_mobile_title": "Mobile (iOS/Android)",
+    "arch_mobile_desc": "The app is fully responsive and installable on both iOS and Android devices directly from the browser. It offers a full-screen experience, offline capabilities, and access to native device features, just like a traditional app.",
+    "arch_db_title": "Firestore Database",
+    "arch_db_desc": "We use Firestore, a flexible and scalable NoSQL cloud database, to store and sync data in real-time. Its powerful querying and robust security rules allow us to build responsive and secure applications.",
+    "arch_auth_title": "Firebase Authentication",
+    "arch_auth_desc": "Provides secure and easy-to-use authentication systems. We support email/password, social logins (Google, Facebook, etc.), and more, all managed through a secure, backend service.",
+    "arch_functions_title": "Cloud Functions",
+    "arch_functions_desc": "For server-side logic, we use Cloud Functions, a serverless compute service. This allows us to run backend code in response to events triggered by Firebase features and HTTPS requests, without managing servers.",
+    "arch_hosting_title": "Firebase Hosting",
+    "arch_hosting_desc": "Our application is deployed on Firebase Hosting, which provides fast and secure hosting for web apps. With a global CDN, free SSL certificates, and custom domain support, it ensures a reliable user experience.",
+    "arch_click_details": "Click on a technology above to see the details.",
     "security_main_title": "Benchmark Data Security",
     "security_main_subtitle": "We have developed a comprehensive security system based on cutting-edge client-side encryption technology. This ensures that only you have full control over your data.",
     "security_state_locked": "Encrypted",
@@ -71,7 +71,6 @@
     "security_unlocked_title": "Access Granted",
     "security_unlocked_desc": "Your data has been successfully decrypted on your device and is ready for use. The server never sees it in unencrypted form.",
     "security_unlocked_button": "Re-encrypt",
-
     "audience_title": "Created for Your Success",
     "audience_subtitle": "Our LMS platform is the ideal solution for a wide range of users, from large corporations to individual experts looking to monetize their knowledge.",
     "audience_business_title": "For Business",
@@ -80,7 +79,6 @@
     "audience_teachers_desc": "Create and sell your own courses on our marketplace. We provide all the necessary tools: from the course builder to payment systems. Focus on creating quality content, and we will handle the technical and marketing issues.",
     "audience_students_title": "For Students",
     "audience_students_desc": "Get access to quality education anytime, from any device. Our platform offers an intuitive interface, interactive materials, and the ability to communicate with teachers and other students. Learning becomes engaging and effective.",
-
     "contact_title": "Let's Get in Touch",
     "contact_subtitle": "Have a question or ready to get started? Fill out the form, and our team will contact you shortly.",
     "contact_role_label": "Your Role",
@@ -93,7 +91,6 @@
     "contact_placeholder_student": "Hi! I'd like to learn more about the available courses...",
     "contact_placeholder_teacher": "Hello! I'm interested in publishing my course on your platform...",
     "contact_placeholder_business": "Hi. Our company is considering your LMS for corporate training. Can we get a demo access?",
-
     "footer_description": "An innovative ecosystem for creating, managing, and monetizing knowledge.",
     "footer_product_title": "Product",
     "footer_ecosystem": "Ecosystem",
@@ -109,7 +106,6 @@
     "footer_privacy": "Privacy Policy",
     "footer_terms": "Terms of Service",
     "footer_rights": "© 2024 Next Level. All rights reserved.",
-
     "cta_title": "Ready to take your learning to the next level?",
     "cta_desc": "Join hundreds of companies and experts who are already transforming education with us. Request a personalized demo to see all the platform's features in action.",
     "cta_button": "Request a Free Demo"

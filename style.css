@@ -85,7 +85,7 @@ main {
     opacity: 1;
 }
 
-.security-state.is-hidden {
+.security-state.hidden {
     opacity: 0;
     transform: scale(0.95);
     pointer-events: none; /* Make it non-interactive when hidden */
@@ -93,4 +93,35 @@ main {
 
 #decryption-text {
     min-height: 28px; /* Prevent layout shift */
+}
+
+/* Architecture Diagram styles */
+.arch-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    @apply shadow-lg;
+}
+
+.dark .card-hover:hover {
+     @apply shadow-lg shadow-slate-700/40;
+}
+
+.arch-card.active {
+    transform: translateY(-5px) scale(1.05);
+    @apply shadow-xl;
+}
+
+.dark .arch-card.active {
+     @apply shadow-xl shadow-slate-600/50;
+}
+
+.arch-card.active.border-blue-500 {
+    border-color: #60a5fa !important; /* a lighter blue */
+}
+
+.arch-card.active.border-green-500 {
+    border-color: #4ade80 !important; /* a lighter green */
 }

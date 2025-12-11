@@ -1,58 +1,64 @@
 <section id="architecture" class="py-16 bg-white dark:bg-slate-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-            <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white fade-in-up" data-translate-key="arch_title">Modern LMS Architecture</h2>
-            <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto fade-in-up delay-100" data-translate-key="arch_subtitle">
+            <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white" data-translate-key="arch_title">Modern LMS Architecture</h2>
+            <p class="mt-4 text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto" data-translate-key="arch_subtitle">
                 Our platform is built on reliable technologies that guarantee high performance, scalability, and cross-platform compatibility for any business.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-            <!-- Clickable Tab: Frontend -->
-            <div data-tech="arch-detail-client" class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 border-l-4 border-blue-500 card-hover cursor-pointer fade-in-up delay-200" aria-label="Show client architecture details">
-                <div class="flex items-center justify-between mb-4">
-                    <h3 class="text-xl font-bold text-slate-800 dark:text-slate-100" data-translate-key="arch_client_title">Client Monolith</h3>
-                    <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-200">Frontend</span>
-                </div>
-                <div class="space-y-2">
-                    <div class="bg-slate-100 dark:bg-slate-700 p-3 rounded-lg text-center font-medium dark:text-slate-200">Mobile (iOS/Android)</div>
-                    <div class="bg-slate-100 dark:bg-slate-700 p-3 rounded-lg text-center font-medium dark:text-slate-200">Web (PWA)</div>
-                    <div class="bg-slate-100 dark:bg-slate-700 p-3 rounded-lg text-center font-medium dark:text-slate-200">Desktop (Win/Mac/Linux)</div>
-                </div>
-                <p class="mt-4 text-sm text-slate-500 dark:text-slate-400" data-translate-key="arch_click_details">Click for technology details</p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+            <!-- Frontend Technologies -->
+            <div data-tech="web" class="arch-card bg-white dark:bg-slate-800 rounded-xl shadow-md p-5 border-l-4 border-blue-500 card-hover cursor-pointer text-center">
+                <h3 class="font-bold text-slate-800 dark:text-slate-100" data-translate-key="arch_web_title"></h3>
+            </div>
+            <div data-tech="desktop" class="arch-card bg-white dark:bg-slate-800 rounded-xl shadow-md p-5 border-l-4 border-blue-500 card-hover cursor-pointer text-center">
+                <h3 class="font-bold text-slate-800 dark:text-slate-100" data-translate-key="arch_desktop_title"></h3>
+            </div>
+            <div data-tech="mobile" class="arch-card bg-white dark:bg-slate-800 rounded-xl shadow-md p-5 border-l-4 border-blue-500 card-hover cursor-pointer text-center">
+                <h3 class="font-bold text-slate-800 dark:text-slate-100" data-translate-key="arch_mobile_title"></h3>
             </div>
 
-            <!-- Clickable Tab: Backend -->
-            <div data-tech="arch-detail-backend" class="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-6 border-l-4 border-orange-500 card-hover cursor-pointer fade-in-up delay-300" aria-label="Show backend architecture details">
-                <div class="flex items-center justify-between mb-4">
-                    <h3 class="text-xl font-bold text-slate-800 dark:text-slate-100" data-translate-key="arch_backend_title">Backend & Database</h3>
-                    <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded-full dark:bg-orange-900 dark:text-orange-200">BaaS</span>
-                </div>
-                <div class="space-y-2">
-                    <div class="bg-slate-100 dark:bg-slate-700 p-3 rounded-lg text-center font-medium dark:text-slate-200">Firestore (DB)</div>
-                    <div class="bg-slate-100 dark:bg-slate-700 p-3 rounded-lg text-center font-medium dark:text-slate-200">Authentication</div>
-                    <div class="bg-slate-100 dark:bg-slate-700 p-3 rounded-lg text-center font-medium dark:text-slate-200">Cloud Messaging (FCM)</div>
-                </div>
-                <p class="mt-4 text-sm text-slate-500 dark:text-slate-400" data-translate-key="arch_click_details">Click for technology details</p>
+            <!-- Backend Technologies -->
+            <div data-tech="db" class="arch-card bg-white dark:bg-slate-800 rounded-xl shadow-md p-5 border-l-4 border-green-500 card-hover cursor-pointer text-center">
+                <h3 class="font-bold text-slate-800 dark:text-slate-100" data-translate-key="arch_db_title"></h3>
+            </div>
+            <div data-tech="auth" class="arch-card bg-white dark:bg-slate-800 rounded-xl shadow-md p-5 border-l-4 border-green-500 card-hover cursor-pointer text-center">
+                <h3 class="font-bold text-slate-800 dark:text-slate-100" data-translate-key="arch_auth_title"></h3>
+            </div>
+            <div data-tech="functions" class="arch-card bg-white dark:bg-slate-800 rounded-xl shadow-md p-5 border-l-4 border-green-500 card-hover cursor-pointer text-center">
+                <h3 class="font-bold text-slate-800 dark:text-slate-100" data-translate-key="arch_functions_title"></h3>
+            </div>
+             <div data-tech="hosting" class="arch-card bg-white dark:bg-slate-800 rounded-xl shadow-md p-5 border-l-4 border-green-500 card-hover cursor-pointer text-center">
+                <h3 class="font-bold text-slate-800 dark:text-slate-100" data-translate-key="arch_hosting_title"></h3>
             </div>
         </div>
 
         <!-- Detail Panels -->
-        <div class="mt-8 transition-all duration-300 fade-in-up delay-400 min-h-[150px]">
-            <!-- Frontend Details (Hidden by default) -->
-            <div id="arch-detail-client" class="arch-detail bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-500/30 rounded-lg p-6 is-hidden">
-                <h4 class="text-lg font-bold text-blue-900 dark:text-blue-200" data-translate-key="arch_frontend_detail_title">Unified Frontend: Web Components & PWA</h4>
-                <p class="mt-2 text-blue-800 dark:text-blue-300" data-translate-key="arch_frontend_detail_desc">
-                    We use a single codebase based on modern Web Components to build the application for all platforms. This Progressive Web App (PWA) installs on mobile and desktop devices, providing a native-like experience with offline access and push notifications, while minimizing development and maintenance costs.
-                </p>
+        <div id="arch-detail-container" class="mt-8 transition-all duration-300 min-h-[120px]">
+             <div id="arch-detail-placeholder" class="arch-detail bg-slate-50 dark:bg-slate-800/20 border border-slate-200 dark:border-slate-500/30 rounded-lg p-6 text-center">
+                <p class="text-slate-500 dark:text-slate-400" data-translate-key="arch_click_details"></p>
             </div>
-
-            <!-- Backend Details (Hidden by default) -->
-            <div id="arch-detail-backend" class="arch-detail bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-500/30 rounded-lg p-6 is-hidden">
-                <h4 class="text-lg font-bold text-orange-900 dark:text-orange-200" data-translate-key="arch_backend_detail_title">Serverless Backend: Firebase (BaaS)</h4>
-                <p class="mt-2 text-orange-800 dark:text-orange-300" data-translate-key="arch_backend_detail_desc">
-                    Our backend leverages Firebase, a powerful Backend-as-a-Service (BaaS) platform. We use Firestore for a scalable NoSQL database, Firebase Authentication for secure user management, and Cloud Functions for serverless computing. This serverless architecture ensures high availability, automatic scaling, and reduced operational overhead.
-                </p>
+            <div id="arch-detail-web" class="arch-detail bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-500/30 rounded-lg p-6 hidden">
+                <p class="text-blue-800 dark:text-blue-300" data-translate-key="arch_web_desc"></p>
+            </div>
+            <div id="arch-detail-desktop" class="arch-detail bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-500/30 rounded-lg p-6 hidden">
+                <p class="text-blue-800 dark:text-blue-300" data-translate-key="arch_desktop_desc"></p>
+            </div>
+            <div id="arch-detail-mobile" class="arch-detail bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-500/30 rounded-lg p-6 hidden">
+                <p class="text-blue-800 dark:text-blue-300" data-translate-key="arch_mobile_desc"></p>
+            </div>
+            <div id="arch-detail-db" class="arch-detail bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-500/30 rounded-lg p-6 hidden">
+                <p class="text-green-800 dark:text-green-300" data-translate-key="arch_db_desc"></p>
+            </div>
+            <div id="arch-detail-auth" class="arch-detail bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-500/30 rounded-lg p-6 hidden">
+                <p class="text-green-800 dark:text-green-300" data-translate-key="arch_auth_desc"></p>
+            </div>
+            <div id="arch-detail-functions" class="arch-detail bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-500/30 rounded-lg p-6 hidden">
+                <p class="text-green-800 dark:text-green-300" data-translate-key="arch_functions_desc"></p>
+            </div>
+            <div id="arch-detail-hosting" class="arch-detail bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-500/30 rounded-lg p-6 hidden">
+                <p class="text-green-800 dark:text-green-300" data-translate-key="arch_hosting_desc"></p>
             </div>
         </div>
     </div>
