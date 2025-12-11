@@ -201,7 +201,7 @@ function initializeArchitectureDiagram() {
     const section = document.getElementById('architecture');
     if (!section) return;
 
-    const setupArchitectureGroup = (cardGroupId, detailContainerClass) => {
+    const setupArchitectureGroup = (cardGroupId) => {
         const cardGroup = document.getElementById(cardGroupId);
         if (!cardGroup) return;
 
@@ -217,19 +217,15 @@ function initializeArchitectureDiagram() {
             const tech = card.dataset.tech;
             const targetDetail = detailContainer.querySelector(`.arch-detail[data-tech='${tech}']`);
             
-            // If the same card is clicked, do nothing.
             if (card.classList.contains('active')) {
                 return;
             }
 
-            // Update cards state
             cards.forEach(c => c.classList.remove('active'));
             card.classList.add('active');
 
-            // Hide placeholder
             if (placeholder) placeholder.classList.add('hidden-placeholder');
 
-            // Transition details
             details.forEach(detail => {
                 if (detail === targetDetail) {
                     detail.classList.add('active');
@@ -270,20 +266,39 @@ function initializeEventListeners() {
         }
     });
 
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIconOpen = document.getElementById('menu-icon-open');
+    const menuIconClose = document.getElementById('menu-icon-close');
+
+    const toggleMenu = () => {
+        const isOpen = mobileMenu.classList.toggle('is-open');
+        mobileMenuBtn.setAttribute('aria-expanded', isOpen);
+        if (menuIconOpen && menuIconClose) {
+            menuIconOpen.classList.toggle('hidden', isOpen);
+            menuIconOpen.classList.toggle('block', !isOpen);
+            menuIconClose.classList.toggle('hidden', !isOpen);
+            menuIconClose.classList.toggle('block', isOpen);
+        }
+    };
+
+    if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target.closest('a')) {
+                toggleMenu();
+            }
+        });
+    }
+
     document.getElementById('logo-link')?.addEventListener('click', function(e) {
         e.preventDefault();
         window.scrollTo({ top: 0, behavior: 'smooth' });
-        document.getElementById('mobile-menu')?.classList.remove('is-open');
+        if (mobileMenu?.classList.contains('is-open')) {
+            toggleMenu();
+        }
     });
-    
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('is-open'));
-        mobileMenu.addEventListener('click', (e) => {
-            if (e.target.tagName === 'A') mobileMenu.classList.remove('is-open');
-        });
-    }
 
     document.addEventListener('click', function(e) {
         const anchor = e.target.closest('a[href^="#"]');
@@ -342,7 +357,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         initializeSecurityDemo();
         handleDeepLink();
         
-        // 5. Clean URL after page load and potential deep link scroll
+        // 5. Reveal the main content
+        document.querySelector('main')?.classList.add('loaded');
+
+        // 6. Clean URL after page load and potential deep link scroll
         setTimeout(() => {
             const cleanUrl = window.location.origin + window.location.pathname;
             window.history.replaceState(null, '', cleanUrl);

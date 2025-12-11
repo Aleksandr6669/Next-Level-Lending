@@ -1,27 +1,27 @@
-<header class="bg-white/80 backdrop-blur-md border-b border-slate-200 fixed w-full top-0 z-40">
+<header class="bg-white/90 backdrop-blur-md border-b border-slate-200 fixed w-full top-0 z-50">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex items-center">
                 <a href="#" id="logo-link" class="flex items-center space-x-2">
                     <img class="h-8 w-auto text-brand-600" src="favicon.svg" alt="Next Level LMS Logo" width="32" height="32">
-                    <span class="text-2xl font-bold text-brand-600 tracking-tight" data-translate-key="logo_text">Next Level</span>
+                    <span class="text-2xl font-bold text-brand-600 tracking-tight whitespace-nowrap" data-translate-key="logo_text">Next Level</span>
                 </a>
             </div>
-            <div class="hidden md:flex space-x-8 items-center">
-                <a href="#ecosystem" class="text-slate-600 hover:text-brand-600 px-3 py-2 text-sm font-medium" data-translate-key="nav_ecosystem">Екосистема</a>
-                <a href="#features" class="text-slate-600 hover:text-brand-600 px-3 py-2 text-sm font-medium" data-translate-key="nav_features">Можливості</a>
-                <a href="#ai_assistant" class="text-slate-600 hover:text-brand-600 px-3 py-2 text-sm font-medium" data-translate-key="nav_ai_assistant">AI-Асистент</a>
-                <a href="#architecture" class="text-slate-600 hover:text-brand-600 px-3 py-2 text-sm font-medium" data-translate-key="nav_architecture">Архітектура</a>
-                <a href="#security" class="text-slate-600 hover:text-brand-600 px-3 py-2 text-sm font-medium" data-translate-key="nav_security">Безпека</a>
-                <a href="#audience" class="text-slate-600 hover:text-brand-600 px-3 py-2 text-sm font-medium" data-translate-key="nav_audience">Для кого?</a>
-                <a href="#contact" class="text-slate-600 hover:text-brand-600 px-3 py-2 text-sm font-medium" data-translate-key="nav_contact">Контакти</a>
+            <div class="hidden lg:flex space-x-4 items-center">
+                <a href="#ecosystem" class="text-slate-600 hover:text-brand-600 px-2 py-2 text-sm font-medium transition-colors" data-translate-key="nav_ecosystem">Екосистема</a>
+                <a href="#features" class="text-slate-600 hover:text-brand-600 px-2 py-2 text-sm font-medium transition-colors" data-translate-key="nav_features">Можливості</a>
+                <a href="#ai_assistant" class="text-slate-600 hover:text-brand-600 px-2 py-2 text-sm font-medium transition-colors" data-translate-key="nav_ai_assistant">AI-Асистент</a>
+                <a href="#architecture" class="text-slate-600 hover:text-brand-600 px-2 py-2 text-sm font-medium transition-colors" data-translate-key="nav_architecture">Архітектура</a>
+                <a href="#security" class="text-slate-600 hover:text-brand-600 px-2 py-2 text-sm font-medium transition-colors" data-translate-key="nav_security">Безпека</a>
+                <a href="#audience" class="text-slate-600 hover:text-brand-600 px-2 py-2 text-sm font-medium transition-colors" data-translate-key="nav_audience">Для кого?</a>
+                <a href="#contact" class="text-slate-600 hover:text-brand-600 px-2 py-2 text-sm font-medium transition-colors" data-translate-key="nav_contact">Контакти</a>
             </div>
             <div class="flex items-center">
-                <!-- Custom Language Switcher -->
+                <!-- Language Switcher -->
                 <div id="language-switcher-container" class="relative">
-                    <button id="language-switcher-button" class="flex items-center space-x-2 bg-white border border-slate-300 rounded-md py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500">
+                     <button id="language-switcher-button" class="flex items-center space-x-2 bg-white border border-slate-300 rounded-md py-2 px-3 text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500">
                         <span id="selected-lang-flag"></span>
-                        <span id="selected-lang-text"></span>
+                        <span id="selected-lang-text" class="text-slate-700"></span>
                         <svg class="w-4 h-4 text-slate-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
                     </button>
                     <div id="language-options" style="display: none;" class="absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg py-1 ring-1 ring-black ring-opacity-5 z-50">
@@ -36,19 +36,31 @@
                         </a>
                     </div>
                 </div>
-                 <!-- Mobile menu button -->
-                <button id="mobile-menu-btn" class="ml-4 text-slate-600 hover:text-brand-600 focus:outline-none md:hidden" data-translate-key="mobile_menu_open_button" aria-label="Open menu">☰</button>
+                <!-- Mobile menu button -->
+                <div class="flex items-center lg:hidden ml-2">
+                    <button id="mobile-menu-btn" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-slate-500 hover:text-brand-600 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only" data-translate-key="mobile_menu_open_button">Відкрити меню</span>
+                        <svg class="h-6 w-6 block" id="menu-icon-open" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                        <svg class="h-6 w-6 hidden" id="menu-icon-close" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden">
-        <a href="#ecosystem" class="block px-3 py-2 text-slate-600 hover:text-brand-600" data-translate-key="nav_ecosystem">Екосистема</a>
-        <a href="#features" class="block px-3 py-2 text-slate-600 hover:text-brand-600" data-translate-key="nav_features">Можливості</a>
-        <a href="#ai_assistant" class="block px-3 py-2 text-slate-600 hover:text-brand-600" data-translate-key="nav_ai_assistant">AI-Асистент</a>
-        <a href="#architecture" class="block px-3 py-2 text-slate-600 hover:text-brand-600" data-translate-key="nav_architecture">Архітектура</a>
-        <a href="#security" class="block px-3 py-2 text-slate-600 hover:text-brand-600" data-translate-key="nav_security">Безпека</a>
-        <a href="#audience" class="block px-3 py-2 text-slate-600 hover:text-brand-600" data-translate-key="nav_audience">Для кого?</a>
-        <a href="#contact" class="block px-3 py-2 text-slate-600 hover:text-brand-600" data-translate-key="nav_contact">Контакти</a>
+    <div id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="#ecosystem" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-white hover:bg-brand-600" data-translate-key="nav_ecosystem">Екосистема</a>
+            <a href="#features" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-white hover:bg-brand-600" data-translate-key="nav_features">Можливості</a>
+            <a href="#ai_assistant" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-white hover:bg-brand-600" data-translate-key="nav_ai_assistant">AI-Асистент</a>
+            <a href="#architecture" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-white hover:bg-brand-600" data-translate-key="nav_architecture">Архітектура</a>
+            <a href="#security" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-white hover:bg-brand-600" data-translate-key="nav_security">Безпека</a>
+            <a href="#audience" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-white hover:bg-brand-600" data-translate-key="nav_audience">Для кого?</a>
+            <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-white hover:bg-brand-600" data-translate-key="nav_contact">Контакти</a>
+        </div>
     </div>
 </header>

@@ -21,6 +21,12 @@ body {
 
 main {
     padding-top: 64px; /* 4rem, same as h-16 to offset the fixed header */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+main.loaded {
+    opacity: 1;
 }
 
 /* Text translation animation */
@@ -44,28 +50,16 @@ main {
     transform: translateY(0);
 }
 
-
 /* Mobile Menu Animation */
 #mobile-menu {
-    overflow: hidden;
     max-height: 0;
-    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
-    background-color: white;
-    border-color: transparent; /* Start with transparent border */
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 #mobile-menu.is-open {
-    max-height: 500px; /* Large enough for the content */
-    padding: 1rem; /* Add padding back when open */
-    border-top: 1px solid #e5e7eb; /* Show border when open */
-}
-
-.dark #mobile-menu {
-    background-color: #1f2937; /* Example dark mode background */
-}
-
-.dark #mobile-menu.is-open {
-    border-top-color: #374151;
+    max-height: 500px; /* Adjust based on your menu content height */
 }
 
 .sticky-header {
@@ -75,10 +69,6 @@ main {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     background-color: rgba(255, 255, 255, 0.8);
-}
-
-.dark .sticky-header {
-    background-color: rgba(17, 24, 39, 0.8);
 }
 
 /* Security Demo Styles */
