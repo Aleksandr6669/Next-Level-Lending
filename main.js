@@ -59,20 +59,24 @@ async function loadTranslations(lang) {
 }
 
 function applyTranslations(container = document) {
-    const translatableElements = container.querySelectorAll('[data-translate-key]');
+    const translatableElements = container.querySelectorAll('[data-translate-key], [data-translate-key-placeholder]');
     const currentTranslations = translations[currentLang];
     if (!currentTranslations) return;
 
     translatableElements.forEach(el => {
         const key = el.getAttribute('data-translate-key');
-        if (currentTranslations[key]) {
+        const placeholderKey = el.getAttribute('data-translate-key-placeholder');
+
+        if (key && currentTranslations[key]) {
             if (el.tagName === 'META') {
                 el.setAttribute('content', currentTranslations[key]);
-            } else if (el.tagName === 'TEXTAREA' || el.tagName === 'INPUT') {
-                el.placeholder = currentTranslations[key];
             } else {
                 el.innerHTML = currentTranslations[key];
             }
+        }
+
+        if (placeholderKey && currentTranslations[placeholderKey]) {
+            el.setAttribute('placeholder', currentTranslations[placeholderKey]);
         }
     });
 }
@@ -96,7 +100,6 @@ async function setLanguage(lang, isInitial = false) {
     if (langFlagEl) langFlagEl.textContent = newTranslations.flag;
 
     applyTranslations();
-    updateContactPlaceholder();
 }
 
 function updateURL(lang) {
@@ -106,24 +109,6 @@ function updateURL(lang) {
 }
 
 // --- COMPONENT-SPECIFIC LOGIC ---
-
-function updateContactPlaceholder() {
-    const roleSelector = document.getElementById('role-select');
-    const messageTextarea = document.getElementById('message');
-    const currentTranslations = translations[currentLang];
-
-    if (!roleSelector || !messageTextarea || !currentTranslations) return;
-
-    const selectedRole = roleSelector.value;
-    const placeholderKeys = {
-        student: 'contact_placeholder_student',
-        teacher: 'contact_placeholder_teacher',
-        business: 'contact_placeholder_business'
-    };
-    
-    const placeholderText = currentTranslations[placeholderKeys[selectedRole]] || '';
-    messageTextarea.placeholder = placeholderText;
-}
 
 function initializeSecurityDemo() {
     const container = document.getElementById('security-container');
@@ -284,11 +269,6 @@ function initializeEventListeners() {
             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
             window.scrollTo({ top: offsetPosition, behavior: "smooth" });
         }
-    });
-
-    const contactForm = document.getElementById('contact-form');
-    contactForm?.addEventListener('change', (e) => {
-        if(e.target.id === 'role-select') updateContactPlaceholder();
     });
 
     const observer = new IntersectionObserver((entries) => {
