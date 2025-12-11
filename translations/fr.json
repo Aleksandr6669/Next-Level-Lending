@@ -48,7 +48,7 @@
     "arch_web_desc": "Notre application web progressive (PWA) offre une expérience similaire à une application native sur tous les navigateurs modernes. Elle est installable, fonctionne hors ligne et reçoit des notifications push, garantissant un accès universel sans passer par un magasin d'applications.",
     "arch_desktop_title": "Bureau (Win/Mac/Linux)",
     "arch_desktop_desc": "Grâce à la technologie PWA, notre application peut être installée directement sur les systèmes Windows, macOS et Linux. Les utilisateurs bénéficient d'une expérience de bureau autonome avec intégration au dock/barre des tâches et des mises à jour transparentes.",
-    "arch_mobile_title": "Mobile (iOS/Android)",
+    "arch_mobile_title": "Mobile (WA)",
     "arch_mobile_desc": "L'application est entièrement responsive et installable sur les appareils iOS et Android directement depuis le navigateur. Elle offre une expérience en plein écran, des capacités hors ligne et un accès aux fonctionnalités natives de l'appareil, tout comme une application traditionnelle.",
     "arch_db_title": "Base de données Firestore",
     "arch_db_desc": "Nous utilisons Firestore, une base de données cloud NoSQL flexible et évolutive, pour stocker et synchroniser les données en temps réel. Ses puissantes capacités d'interrogation et ses règles de sécurité robustes nous permettent de créer des applications réactives et sécurisées.",
