@@ -308,6 +308,12 @@ document.addEventListener('DOMContentLoaded', async () => {
         initializeArchitectureDiagram();
         initializeSecurityDemo();
         handleDeepLink();
+        
+        // 5. Clean URL after page load and potential deep link scroll
+        setTimeout(() => {
+            const cleanUrl = window.location.origin + window.location.pathname;
+            window.history.replaceState(null, '', cleanUrl);
+        }, 1000); // Delay to allow for scrolling
 
     } catch (error) {
         console.error("App initialization failed:", error);
