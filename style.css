@@ -23,6 +23,19 @@ main {
     padding-top: 64px; /* 4rem, same as h-16 to offset the fixed header */
 }
 
+/* Animation for sections */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 /* Mobile Menu Animation */
 #mobile-menu {
     overflow: hidden;
@@ -46,18 +59,6 @@ main {
     border-top-color: #374151;
 }
 
-
-.fade-in-up {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in-up.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 .sticky-header {
     position: sticky;
     top: 0;
@@ -71,7 +72,7 @@ main {
     background-color: rgba(17, 24, 39, 0.8);
 }
 
-/* New Security Demo Styles */
+/* Security Demo Styles */
 .security-state {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
