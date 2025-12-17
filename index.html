@@ -39,6 +39,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="components/cookie-policy.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="style.css"></noscript>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -92,7 +93,8 @@
         },
         {
           "@type": "FAQPage",
-          "name": "Next Level LMS "
+          "name": "Next Level LMS",
+          "headline": "Next Level LMS",
           "mainEntity": [
             {
               "@type": "Question",
@@ -450,31 +452,8 @@
         <div id="cta-container" class="fade-in-up"></div>
     </main>
     <div id="footer-container"></div>
+    <div id="cookie-policy-container"></div>
 
     <script src="main.js" defer></script>
-    <script>
-      // Asynchronously load components into their placeholders
-      function loadComponent(component, placeholderId) {
-        fetch(`components/${component}.html`)
-          .then(response => response.ok ? response.text() : Promise.reject('Component not found'))
-          .then(data => {
-            document.getElementById(placeholderId).innerHTML = data;
-          })
-          .catch(error => console.error(`Error loading ${component}:`, error));
-      }
-      
-      document.addEventListener('DOMContentLoaded', () => {
-        loadComponent('header', 'header-container');
-        loadComponent('hero', 'hero-container');
-        loadComponent('ecosystem', 'ecosystem-container');
-        loadComponent('features', 'features-container');
-        loadComponent('ai_assistant', 'ai_assistant-container');
-        loadComponent('architecture', 'architecture-container');
-        loadComponent('security', 'security-container');
-        loadComponent('audience', 'audience-container');
-        loadComponent('cta', 'cta-container');
-        loadComponent('footer', 'footer-container');
-      });
-    </script>
 </body>
 </html>

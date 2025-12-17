@@ -107,5 +107,7 @@
   "load_component_error": "Échec du chargement du composant.",
   "app_init_error": "<h1>Erreur</h1><p>Impossible de charger le contenu de la page. Veuillez réessayer plus tard.</p>",
   "name": "FR",
-  "flag": "🇫🇷"
+  "flag": "🇫🇷",
+  "cookie_policy_text": "Nous utilisons des cookies pour l'analyse avec Google Analytics afin d'améliorer votre expérience. En cliquant sur \"Accepter\", vous y consentez.",
+  "cookie_policy_accept": "Accepter"
 }

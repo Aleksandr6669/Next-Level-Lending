@@ -122,6 +122,31 @@ function updateURL(lang) {
 
 // --- COMPONENT-SPECIFIC LOGIC ---
 
+function initializeCookiePolicy() {
+    const cookieBanner = document.getElementById('cookie-banner');
+    const acceptButton = document.getElementById('accept-cookie-policy');
+
+    if (!cookieBanner || !acceptButton) {
+        console.error("Cookie banner or accept button not found.");
+        return;
+    }
+
+    const consent = localStorage.getItem('cookieConsent');
+
+    if (consent === 'accepted') {
+        return;
+    }
+
+    setTimeout(() => {
+        cookieBanner.classList.add('show');
+    }, 500);
+
+    acceptButton.addEventListener('click', () => {
+        localStorage.setItem('cookieConsent', 'accepted');
+        cookieBanner.classList.remove('show');
+    });
+}
+
 function initializeSecurityDemo() {
     const container = document.getElementById('security-container');
     if (!container) return;
@@ -334,7 +359,7 @@ function initializeEventListeners() {
 document.addEventListener('DOMContentLoaded', async () => {
     const components = [
         'header', 'hero', 'ecosystem', 'features', 'ai_assistant', 
-        'architecture', 'security', 'audience', 'contact', 'footer', 'cta',
+        'architecture', 'security', 'audience', 'contact', 'footer', 'cta', 'cookie-policy'
     ];
 
     try {
@@ -355,6 +380,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         initializeEventListeners();
         initializeArchitectureDiagram();
         initializeSecurityDemo();
+        initializeCookiePolicy();
         handleDeepLink();
         
         // 5. Reveal the main content
