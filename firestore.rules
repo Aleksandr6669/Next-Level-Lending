@@ -1,0 +1,18 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Allow anyone to create a document in the 'messages' collection.
+    // Nobody can read, update, or delete any documents.
+    match /messages/{messageId} {
+      allow read, update, delete: if false;
+      allow create: if true;
+    }
+
+    // Deny all other access
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

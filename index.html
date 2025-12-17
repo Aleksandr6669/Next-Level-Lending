@@ -454,6 +454,25 @@
     <div id="footer-container"></div>
     <div id="cookie-policy-container"></div>
 
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+
+    <!-- Firebase initialization -->
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyDWl3LPuk_XGp08jlBmdXk50j5exnKTywk",
+        authDomain: "nextlevel-work-41273848-98e6b.firebaseapp.com",
+        projectId: "nextlevel-work-41273848-98e6b",
+        storageBucket: "nextlevel-work-41273848-98e6b.firebasestorage.app",
+        messagingSenderId: "730178037302",
+        appId: "1:730178037302:web:d219844f2e8b18db8a1a97"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      window.firestore = firebase.firestore();
+    </script>
+
     <script src="main.js" defer></script>
 </body>
 </html>

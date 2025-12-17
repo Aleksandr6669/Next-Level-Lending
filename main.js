@@ -164,10 +164,9 @@ function initializeCtaForm() {
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
             const submitButton = form.querySelector('button[type="submit"]');
-            const originalButtonText = submitButton.innerHTML;
             submitButton.disabled = true;
             submitButton.innerHTML = `<span data-translate-key="form_sending">Відправка...</span>`;
-            applyTranslations(form); // Translate the new button text
+            applyTranslations(form);
 
             const formData = new FormData(form);
             const name = formData.get('name');
@@ -175,7 +174,7 @@ function initializeCtaForm() {
             const message = formData.get('message');
 
             try {
-                await sendTelegramMessage(name, email, message);
+                await saveMessageToFirestore(name, email, message);
                 const formContent = contactFormContainer.querySelector('.form-content');
                 formContent.innerHTML = `<div class="text-center p-8">
                     <h3 class="text-2xl font-bold text-green-600 dark:text-green-400" data-translate-key="form_success_title">Дякуємо!</h3>
@@ -183,7 +182,7 @@ function initializeCtaForm() {
                 </div>`;
                 applyTranslations(contactFormContainer);
             } catch (error) {
-                console.error('Telegram sending failed:', error);
+                console.error('Form submission failed:', error);
                 const formContent = contactFormContainer.querySelector('.form-content');
                 formContent.innerHTML = `<div class="text-center p-8">
                     <h3 class="text-2xl font-bold text-red-600 dark:text-red-400" data-translate-key="form_error_title">Помилка</h3>
@@ -195,48 +194,27 @@ function initializeCtaForm() {
     }
 }
 
-async function sendTelegramMessage(name, email, message) {
-    const botToken = 'YOUR_TELEGRAM_BOT_TOKEN'; // <-- IMPORTANT: Replace with your Bot Token
-    const chatId = 'YOUR_TELEGRAM_CHAT_ID';   // <-- IMPORTANT: Replace with your Chat ID
-
-    if (botToken === 'YOUR_TELEGRAM_BOT_TOKEN' || chatId === 'YOUR_TELEGRAM_CHAT_ID') {
-        console.warn('Telegram bot token or chat ID is not configured.');
-        // In a real scenario, you might want to throw an error or handle this case differently.
-        // For this demo, we'll simulate a success without sending the message.
-        return Promise.resolve(); 
+async function saveMessageToFirestore(name, email, message) {
+    // Ensure Firestore is initialized and available
+    if (!window.firestore) {
+        console.error('Firestore is not initialized!');
+        throw new Error('Firestore is not available.');
     }
 
-    const text = `
-        ✨ *Нова заявка з сайту Next Level!* ✨
-        -----------------------------------
-        👤 *Ім'я:* ${name}
-        📧 *Email:* ${email}
-        
-        💬 *Повідомлення:*
-        ${message}
-        -----------------------------------
-    `;
-
-    const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
-
-    const response = await fetch(url, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            chat_id: chatId,
-            text: text,
-            parse_mode: 'Markdown',
-        }),
-    });
-
-    if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(`Telegram API Error: ${errorData.description}`);
+    try {
+        await window.firestore.collection('messages').add({
+            name: name,
+            email: email,
+            message: message,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(), // Add a server-side timestamp
+            read: false, // Add a flag to mark messages as unread
+            archived: false // Add a flag for archiving
+        });
+        console.log("Message successfully saved to Firestore!");
+    } catch (error) {
+        console.error("Error writing document to Firestore: ", error);
+        throw error; // Re-throw the error to be caught by the form handler
     }
-
-    return response.json();
 }
 
 function initializeSecurityDemo() {
