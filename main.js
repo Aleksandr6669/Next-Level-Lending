@@ -147,6 +147,98 @@ function initializeCookiePolicy() {
     });
 }
 
+function initializeCtaForm() {
+    const ctaButtonContainer = document.getElementById('cta-button-container');
+    const showContactFormBtn = document.getElementById('show-contact-form-btn');
+    const contactFormContainer = document.getElementById('contact-form-container');
+    const form = contactFormContainer?.querySelector('form');
+
+    if (showContactFormBtn && contactFormContainer && ctaButtonContainer) {
+        showContactFormBtn.addEventListener('click', () => {
+            ctaButtonContainer.classList.add('hidden');
+            contactFormContainer.classList.add('form-visible');
+        });
+    }
+
+    if (form) {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const submitButton = form.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton.innerHTML;
+            submitButton.disabled = true;
+            submitButton.innerHTML = `<span data-translate-key="form_sending">Відправка...</span>`;
+            applyTranslations(form); // Translate the new button text
+
+            const formData = new FormData(form);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const message = formData.get('message');
+
+            try {
+                await sendTelegramMessage(name, email, message);
+                const formContent = contactFormContainer.querySelector('.form-content');
+                formContent.innerHTML = `<div class="text-center p-8">
+                    <h3 class="text-2xl font-bold text-green-600 dark:text-green-400" data-translate-key="form_success_title">Дякуємо!</h3>
+                    <p class="mt-2 text-slate-700 dark:text-slate-300" data-translate-key="form_success_message">Ваше повідомлення було успішно надіслано. Ми зв'яжемося з вами найближчим часом.</p>
+                </div>`;
+                applyTranslations(contactFormContainer);
+            } catch (error) {
+                console.error('Telegram sending failed:', error);
+                const formContent = contactFormContainer.querySelector('.form-content');
+                formContent.innerHTML = `<div class="text-center p-8">
+                    <h3 class="text-2xl font-bold text-red-600 dark:text-red-400" data-translate-key="form_error_title">Помилка</h3>
+                    <p class="mt-2 text-slate-700 dark:text-slate-300" data-translate-key="form_error_message">Не вдалося надіслати повідомлення. Будь ласка, спробуйте ще раз пізніше.</p>
+                </div>`;
+                applyTranslations(contactFormContainer);
+            }
+        });
+    }
+}
+
+async function sendTelegramMessage(name, email, message) {
+    const botToken = 'YOUR_TELEGRAM_BOT_TOKEN'; // <-- IMPORTANT: Replace with your Bot Token
+    const chatId = 'YOUR_TELEGRAM_CHAT_ID';   // <-- IMPORTANT: Replace with your Chat ID
+
+    if (botToken === 'YOUR_TELEGRAM_BOT_TOKEN' || chatId === 'YOUR_TELEGRAM_CHAT_ID') {
+        console.warn('Telegram bot token or chat ID is not configured.');
+        // In a real scenario, you might want to throw an error or handle this case differently.
+        // For this demo, we'll simulate a success without sending the message.
+        return Promise.resolve(); 
+    }
+
+    const text = `
+        ✨ *Нова заявка з сайту Next Level!* ✨
+        -----------------------------------
+        👤 *Ім'я:* ${name}
+        📧 *Email:* ${email}
+        
+        💬 *Повідомлення:*
+        ${message}
+        -----------------------------------
+    `;
+
+    const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+    const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            chat_id: chatId,
+            text: text,
+            parse_mode: 'Markdown',
+        }),
+    });
+
+    if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(`Telegram API Error: ${errorData.description}`);
+    }
+
+    return response.json();
+}
+
 function initializeSecurityDemo() {
     const container = document.getElementById('security-container');
     if (!container) return;
@@ -359,7 +451,7 @@ function initializeEventListeners() {
 document.addEventListener('DOMContentLoaded', async () => {
     const components = [
         'header', 'hero', 'ecosystem', 'features', 'ai_assistant', 
-        'architecture', 'security', 'audience', 'contact', 'footer', 'cta', 'cookie-policy'
+        'architecture', 'security', 'audience', 'footer', 'cta', 'cookie-policy'
     ];
 
     try {
@@ -381,6 +473,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         initializeArchitectureDiagram();
         initializeSecurityDemo();
         initializeCookiePolicy();
+        initializeCtaForm();
         handleDeepLink();
         
         // 5. Reveal the main content

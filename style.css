@@ -161,3 +161,48 @@ main.loaded {
      pointer-events: none;
      position: absolute;
 }
+
+/* Contact Form Styles */
+#contact-form-container {
+    transition: all 0.5s ease-in-out;
+}
+
+#contact-form-container form input,
+#contact-form-container form textarea {
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#contact-form-container form input:focus,
+#contact-form-container form textarea:focus {
+    @apply ring-2 ring-brand-500 border-transparent;
+}
+
+.dark #contact-form-container form input:focus,
+.dark #contact-form-container form textarea:focus {
+    @apply ring-brand-400;
+}
+
+/* CTA Form Animation */
+#contact-form-container {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out, opacity 0.5s ease-in-out, margin-top 0.5s ease-in-out;
+    margin-top: 0;
+}
+
+#contact-form-container.form-visible {
+    max-height: 1000px; /* Large enough to fit the form */
+    opacity: 1;
+    margin-top: 3rem; /* 48px, creates space after the title */
+}
+
+#cta-button-container {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#cta-button-container.hidden {
+    opacity: 0;
+    transform: scale(0.9);
+    display: none;
+}
